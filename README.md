@@ -1,0 +1,1 @@
+A Foundation-based TwentyTwelve child theme for WordPress.
