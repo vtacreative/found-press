@@ -6,3 +6,6 @@ them with customized Foundation architecture.
 
 :MORE
 http://foundation.zurb.com/
+
+:USE
+create a folder called "found-press" in your themes directory, alongside the default twentytwelve, and clone git@github.com:CL75/found-press.git. If you see the "Welcome to Foundation" page in your browser, you're good to go.
