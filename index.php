@@ -9,8 +9,32 @@
 */
 
 get_header(); ?>
+		<div class="row" role="main">
+			<div class="twelve columns panel">
+				<?php if(have_posts()): ?>
+					<?php while(have_posts()): the_post(); ?>
+						<?php get_template_part('content', get_post_format()); ?>
+					<?php endwhile; ?>
+					<?php twentytwelve_content_nav('nav-below'); ?>
+				<?php else: ?>
+					<article>
+					<?php if(current_user_can('edit_posts')): ?>
+						<header>
+							<h1><?php _e('No posts.'); ?></h1>
+						</header>
+						<p><?php printf( __('<a href="%s">Publish a post</a>.'), admin_url('post-new.php')); ?></p>
+					<?php else: ?>
+						<header>
+							<h1><?php _e('No posts.'); ?></h1>
+						</header>
+						<p><?php _e('Try searching maybe?'); ?></p>
+						<?php get_search_form(); ?>
+					<?php endif; ?><!--/current_user_can()-->
+					</article>
 
-<!-- BUILD! -->
+				<?php endif; ?><!--/have_posts()-->
+			</div>
+		</div><!--/.row -->
 
-<!-- <?php get_sidebar(); ?>
-<?php get_footer(); ?> -->
+<?php get_sidebar(); ?>
+<?php get_footer(); ?>
