@@ -1,16 +1,9 @@
 <?php
-/**
- * footer content and the closing of the
- * #main and #page div elements.
- * @package WordPress
- * @subpackage Twenty_Twelve
- * @since Twenty Twelve 1.0
- */
+/* footer content */
 ?>
 	<footer class="row" role="contentinfo">
-		<div class="twelve columns panel">
-			<?php do_action( 'twentytwelve_credits' ); ?>
-			<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'twentytwelve' ) ); ?>" title="<?php esc_attr_e( 'Semantic Personal Publishing Platform', 'twentytwelve' ); ?>"><?php printf( __( 'Proudly powered by %s', 'twentytwelve' ), 'WordPress' ); ?></a>
+		<div class="twelve columns panel rb">
+			<a href="https://github.com/CL75/found-press" title="">found-press</a> -> Foundation + WordPress: git@github.com:CL75/found-press.git
 		</div>
 	</footer><!--/.row-->
 </div><!--/#page-->

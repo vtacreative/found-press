@@ -10,12 +10,15 @@
 
 get_header(); ?>
 		<div class="row" role="main">
-			<div class="twelve columns panel">
+			
 				<?php if(have_posts()): ?>
 					<?php while(have_posts()): the_post(); ?>
-						<?php get_template_part('content', get_post_format()); ?>
+						<div class="twelve columns panel rb">
+							<?php get_template_part('content', get_post_format()); ?>
+						</div>
 					<?php endwhile; ?>
 					<?php twentytwelve_content_nav('nav-below'); ?>
+					
 				<?php else: ?>
 					<article>
 					<?php if(current_user_can('edit_posts')): ?>
@@ -33,7 +36,7 @@ get_header(); ?>
 					</article>
 
 				<?php endif; ?><!--/have_posts()-->
-			</div>
+			
 		</div><!--/.row -->
 
 <?php get_sidebar(); ?>

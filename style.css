@@ -913,9 +913,16 @@ textarea {
 //
 ///////////////////////////////*/
 
-
-
-
+/* VARIOUS ROUNDED CORNER SETTINGS 
+   https://gist.github.com/4504555*/
+.r5		{ border-radius:5px; }
+.r10	{ border-radius:10px; }
+.rb 	{ border-radius:0 0 10px 10px; }
+.rt 	{ border-radius:10px 10px 0 0; }
+.rtr 	{ border-radius-top-right:10px; }
+.rbr 	{ border-radius-bottom-right:10px; }
+.rtl 	{ border-radius-top-left:10px; }
+.rbl 	{ border-radius-bottom-left:10px; }
 
 
 
