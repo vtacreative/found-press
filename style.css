@@ -7,7 +7,6 @@ Version: 0.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: responsive, fluid, mobile, mobile-friendly
-Template: twentytwelve
 
 Comments: 	this is one of three style sheets for this theme.
 			we parse the page as PHP and use variables to create
@@ -899,6 +898,56 @@ textarea {
 
 
 
+/* ==========================================================================
+   Custom styles & TwentyTwelve overrides start here
+   ========================================================================== */
+
+
+
+
+
+/* Navigation */
+.nav {
+	text-align:right;
+	background:pink;
+	/*height:78px;*/ }
+
+.nav-menu ul {
+	padding:20px 0 0 0;
+	margin:0; }
+	
+.nav-menu ul li {
+	font-size:1em;
+	display:inline;
+	padding-left:10px; }
+	
+.nav-menu ul li a {
+	color:#7d7d7d;
+	font-size:16px; }
+	
+	
+/* General Typography Settings */
+p, li {
+	font-size:15px;
+	color:#707070; }
+	
+a {
+	color:#707070; }
+	
+a:hover, 
+.nav-menu ul li a:hover,
+.orange {
+	color:#f15a24; }
+
+.header-container {
+	background:#fff;
+	-moz-box-shadow: 0 0 4px #959595;
+	-webkit-box-shadow: 0 0 4px #959595;
+	box-shadow: 0 0 4px #959595; }
+	
+.footer-container {
+	border-top:solid 1px #b7b7b7;
+	background:#ebebeb; }
 
 
 
@@ -907,14 +956,13 @@ textarea {
 
 
 
-/*///////////////////////////////
-//
-//	custom styles
-//
-///////////////////////////////*/
+
+
+
+
 
 /* VARIOUS ROUNDED CORNER SETTINGS 
-   https://gist.github.com/4504555*/
+   https://gist.github.com/4504555 */
 .r5		{ border-radius:5px; }
 .r10	{ border-radius:10px; }
 .rb 	{ border-radius:0 0 10px 10px; }
@@ -924,7 +972,33 @@ textarea {
 .rtl 	{ border-radius-top-left:10px; }
 .rbl 	{ border-radius-bottom-left:10px; }
 
-
-
-
-
+/*  HANDY COLOR SETTINGS FOR DIV POSITIONING 
+	https://gist.github.com/4657937 */
+.a { background: aqua;  		}
+.b { background: blue;			}
+.c { background: chartreuse; 	}
+.d { background: dodgerblue; 	}
+.f { background: fuchsia; 		}
+.g { background: grey; 			}
+.h { background: hotpink; 		}
+.i { background: indigo; 		}
+.k { background: khaki;     	}
+.l { background: limegreen;     }
+.m { background: maroon;     	}
+.n { background: navy;     		}
+.o { background: orange; 		}
+.p { background: pink; 			}
+.r { background: red; 			}
+.t { background: teal;     		}
+.v { background: violet;     	}
+.y { background: yellow; 		}
+/* GRAYSCALE */
+.g1 { background:#EBEBEB; }
+.g2 { background:#D7D7D7; }
+.g3 { background:#C2C2C2; }
+.g4 { background:#ACACAC; }
+.g5 { background:#959595; }
+.g6 { background:#7D7D7D; }
+.g7 { background:#626262; }
+.g8 { background:#464646; }
+.g9 { background:#262626; }

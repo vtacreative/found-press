@@ -1,7 +1,7 @@
-<p font-family:'Courier';>Foundation-based TwentyTwelve child for rapid deployment of responsive WordPress themes. The idea was to preserve some of the interesting TwentyTwelve functionality while abandoning thematic and architectural elements so we fully customize via Foundation.
+<p font-family:'Courier';>This is the pre-release version of found-press, a(nother) Foundation-based starter theme for rapid deployment of responsive WordPress themes.
 
 :MORE
 http://foundation.zurb.com/
 
 :USE
-Install in themes directory alongside TwentyTwelve.</p>
+Install in themes directory.</p>
