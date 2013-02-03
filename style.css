@@ -845,61 +845,9 @@ textarea {
 
 
 
-/* keep menu-toggle functionality from parent theme */
-/* Buttons */
-.menu-toggle {
-	padding: 6px 10px;
-	padding: 0.428571429rem 0.714285714rem;
-	font-size: 11px;
-	font-size: 0.785714286rem;
-	line-height: 1.428571429;
-	font-weight: normal;
-	color: #7c7c7c;
-	background-color: #e6e6e6;
-	background-repeat: repeat-x;
-	background-image: -moz-linear-gradient(top, #f4f4f4, #e6e6e6);
-	background-image: -ms-linear-gradient(top, #f4f4f4, #e6e6e6);
-	background-image: -webkit-linear-gradient(top, #f4f4f4, #e6e6e6);
-	background-image: -o-linear-gradient(top, #f4f4f4, #e6e6e6);
-	background-image: linear-gradient(top, #f4f4f4, #e6e6e6);
-	border: 1px solid #d2d2d2;
-	border-radius: 3px;
-	box-shadow: 0 1px 2px rgba(64, 64, 64, 0.1); }
-	
-.menu-toggle {
-	cursor: pointer;
-	display: inline-block; }
-
-.menu-toggle:hover {
-	color: #5e5e5e;
-	background-color: #ebebeb;
-	background-repeat: repeat-x;
-	background-image: -moz-linear-gradient(top, #f9f9f9, #ebebeb);
-	background-image: -ms-linear-gradient(top, #f9f9f9, #ebebeb);
-	background-image: -webkit-linear-gradient(top, #f9f9f9, #ebebeb);
-	background-image: -o-linear-gradient(top, #f9f9f9, #ebebeb);
-	background-image: linear-gradient(top, #f9f9f9, #ebebeb); }
-	
-.menu-toggle:active,
-.menu-toggle.toggled-on {
-	color: #757575;
-	background-color: #e1e1e1;
-	background-repeat: repeat-x;
-	background-image: -moz-linear-gradient(top, #ebebeb, #e1e1e1);
-	background-image: -ms-linear-gradient(top, #ebebeb, #e1e1e1);
-	background-image: -webkit-linear-gradient(top, #ebebeb, #e1e1e1);
-	background-image: -o-linear-gradient(top, #ebebeb, #e1e1e1);
-	background-image: linear-gradient(top, #ebebeb, #e1e1e1);
-	box-shadow: inset 0 0 8px 2px #c6c6c6, 0 1px 0 0 #f4f4f4;
-	border: none; }
-
-
-
-
-
 
 /* ==========================================================================
-   Custom styles & TwentyTwelve overrides start here
+   Custom found-press styles begin here
    ========================================================================== */
 
 
@@ -909,35 +857,33 @@ textarea {
 /* Navigation */
 .nav {
 	text-align:right;
-	background:pink;
-	/*height:78px;*/ }
+	margin-top:20px; }
 
-.nav-menu ul {
-	padding:20px 0 0 0;
-	margin:0; }
+.nav ul {
+	 }
 	
-.nav-menu ul li {
+.nav ul li {
 	font-size:1em;
 	display:inline;
 	padding-left:10px; }
 	
-.nav-menu ul li a {
-	color:#7d7d7d;
+.nav ul li a {
+	color:#707070;
 	font-size:16px; }
 	
 	
 /* General Typography Settings */
 p, li {
-	font-size:15px;
+	font-size:18px;
 	color:#707070; }
 	
 a {
 	color:#707070; }
 	
 a:hover, 
-.nav-menu ul li a:hover,
-.orange {
-	color:#f15a24; }
+.nav ul li a:hover,
+.green {
+	color:#81d742; }
 
 .header-container {
 	background:#fff;
@@ -947,7 +893,21 @@ a:hover,
 	
 .footer-container {
 	border-top:solid 1px #b7b7b7;
-	background:#ebebeb; }
+	background:#ebebeb;
+	height:150px;
+	padding:30px 0; }
+
+.row.featurettes {
+	padding:70px 0; }
+	
+.cimg {
+	display:block;
+	margin:0 auto; }
+
+.callout-link {
+	font-size:2em;
+	display:block;
+	padding:60px 0 40px 0; }
 
 
 
@@ -956,9 +916,9 @@ a:hover,
 
 
 
-
-
-
+/* ==========================================================================
+   Gists
+   ========================================================================== */
 
 
 /* VARIOUS ROUNDED CORNER SETTINGS 

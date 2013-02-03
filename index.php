@@ -6,36 +6,21 @@
 */
 
 get_header(); ?>
+
 		<div class="row" role="main">
 			
-				<?php if(have_posts()): // start loop if posts exist ?>
-					
-					<?php while(have_posts()): the_post(); ?>
-						<div class="twelve columns panel rb">
-							<?php get_template_part('content', get_post_format()); ?>
-						</div>
-					<?php endwhile; ?>
-					
-				<?php else: // print error messages if no posts exist ?>
-					
-					<article>
-					<?php if(current_user_can('edit_posts')): ?>
-						<header>
-							<h1><?php _e('No posts.'); ?></h1>
-						</header>
-						<p><?php printf( __('To publish your first post, click <a href="%s">here</a>.'), admin_url('post-new.php')); ?></p>
-					<?php else: ?>
-						<header>
-							<h1><?php _e('No posts.'); ?></h1>
-						</header>
-						<p><?php _e('Try searching maybe?'); ?></p>
-						<?php get_search_form(); ?>
-					<?php endif; ?><!--/current_user_can()-->
-					</article>
-
-				<?php endif; ?><!--/have_posts()-->
+				<div class="nine columns">
+					<?php if(have_posts()): // start loop if posts exist ?>
+						<?php while(have_posts()): the_post(); ?>
+							<div class="panel rb">
+								<?php get_template_part('content', get_post_format()); ?>
+							</div>
+						<?php endwhile; ?>
+					<?php endif; ?><!--/have_posts()-->
+				</div>
+				<div class="three columns panel rb">
+					<?php get_sidebar(); ?>
+				</div>
+			</div><!--/.row -->
 			
-		</div><!--/.row -->
-
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
