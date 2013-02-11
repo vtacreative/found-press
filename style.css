@@ -1,6 +1,6 @@
 /*
 Theme Name: found-press 
-Description: A starter WordPress Twenty Twelve child theme using Foundation 3.2, HTML5 Boilerplate, Modernizr & Normalize.
+Description: A starter WordPress theme using Foundation 3.2, HTML5 Boilerplate, Modernizr & Normalize.
 Author: Chris Long
 Author URI: http://github.com/CL75/
 Version: 0.1
@@ -908,6 +908,13 @@ a:hover,
 	font-size:2em;
 	display:block;
 	padding:60px 0 40px 0; }
+
+
+
+
+/* set custom background image to 100% width */
+body.custom-background {
+	background-size:100% auto; }
 
 
 

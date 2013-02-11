@@ -31,6 +31,9 @@ add_action('after_setup_theme', 'fp_setup');
 
 
 
+/* support custom header image */
+require(get_template_directory() . '/inc/custom-header.php');
+
 
 
 /*	generate post metadata  */
