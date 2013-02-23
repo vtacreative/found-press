@@ -20,6 +20,13 @@
 	<!--[if lt IE 9]>  
 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->  
+	<!-- Analytics: change UA-XXXXX-X to be your code. -->
+<script>
+    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
 </head>
 <body <?php body_class(); ?>>
 	<div id="page" class="hfeed">
