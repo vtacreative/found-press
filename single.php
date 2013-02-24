@@ -4,7 +4,7 @@
 get_header(); ?>
 
 	<div class="row" role="main">
-		<div class="twelve columns panel rb">
+		<div class="twelve columns a">
 			<?php while(have_posts()): the_post(); ?>
 			<?php get_template_part('content', get_post_format()); ?>
 			<nav>

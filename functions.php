@@ -23,6 +23,22 @@ add_action('wp_enqueue_scripts', 'fp_scripts_styles', 5); //TODO: possibly alter
 
 
 
+
+
+
+/*  clean up the output of wp_head */
+remove_action('wp_head', 'rsd_link');
+remove_action('wp_head', 'wlwmanifest_link');
+remove_action('wp_head', 'wp_generator');
+remove_action('wp_head', 'start_post_rel_link');
+remove_action('wp_head', 'index_rel_link');
+remove_action('wp_head', 'adjacent_posts_rel_link');
+
+
+
+
+
+
 /*	support custom background color  */
 function fp_setup() {
 	add_theme_support('custom-background', array('default-color' => '81d742'));
@@ -103,8 +119,6 @@ add_action( 'widgets_init', 'fp_widgets_init' );
 //	Custom Post Type: Events
 //
 ///////////////////////////////*/
-
-
 
 /* register a custom post type for events */
 add_action('init', 'create_event');

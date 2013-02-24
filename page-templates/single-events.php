@@ -1,5 +1,5 @@
 <?php
- /* Template Name: Events Template */
+ /* Template Name: Events */
 get_header(); ?>
 
 	<div id="primary">
