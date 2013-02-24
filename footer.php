@@ -3,12 +3,45 @@
 ?>
 <div class="footer-container">
 	<footer class="row" role="contentinfo">
-		<div class="twelve columns">
-			<a href="https://github.com/CL75/found-press" title="">found-press</a> -> Foundation + WordPress: git@github.com:CL75/found-press.git
+		<div class="three columns">
+			<ul>
+				<li class="footer-subhead">Short bios are in</li>
+			</ul>
+			<small>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa.<small>
+			<form class="cntrd" role="search" method="get" id="searchform" action="<?php echo esc_url(home_url('/')); ?>">
+				<input class="r10" type="text" value="Search" name="s" id="s" />
+				<input type="submit" id="searchsubmit" value="go" />
+			</form>
+		</div>
+		<div class="three columns">
+			<ul class="links">
+				<li class="footer-subhead">Client</li>
+				<li><a href="">About</a></li>
+				<li><a href="">Map</a></li>
+				<li><a href="">Blog</a></li>
+				<li><a href="">Privacy</a></li>
+				<li><a href="">Terms</a></li>
+			</ul>
+		</div>
+		<div class="three columns">
+			<ul>
+				<li class="footer-subhead">Fancy Badges</li>
+				<li><img src="http://www.placehold.it/150x40"></li>
+				<li><img src="http://www.placehold.it/150x40"></li>
+				<li><img src="http://www.placehold.it/150x40"></li>
+			</ul>
+		</div>
+		<div class="three columns">
+			<h2 class="footer-callout">"Let me tell you about how fantastically awesome I am."</h2>
+			<p class="">&mdash;<i>Owner</i></p>
 		</div>
 	</footer><!--/.row-->
+	<div class="row">
+		<div class"twelve columns c">
+			<p class="copyright">&copy; <?php echo date('Y'); ?> Awesome Client</p>
+		</div>
+	</div>
 </div>
-	
 </div><!--/#page-->
 <?php wp_footer(); ?>
 </body>

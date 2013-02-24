@@ -15,12 +15,8 @@
 			
 			<?php if(is_single()): ?>
 				<h1><?php the_title(); ?></h1>
-				<?php else: ?>
+			<?php else: ?>
 				<h1><a href="<?php the_permalink(); ?>" title="<?php echo esc_attr(sprintf( __( 'Permalink to %s'), the_title_attribute('echo=0'))); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
-			<?php endif; ?>
-			
-			<?php if(comments_open()): ?>
-				<div><?php comments_popup_link('<span>' . __('Leave a reply') . '</span>', __('1 Reply'), __('% Replies')); ?></div>
 			<?php endif; ?>
 		</header>
 

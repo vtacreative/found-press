@@ -2,7 +2,7 @@
 /* differentiates a page from the post feed, front page, etc. */
 ?>
 	<article class="row" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-		<div class="twelve columns panel rb">
+		<div class="twelve columns c">
 		<header>
 			<h1><?php the_title(); ?></h1>
 		</header>
