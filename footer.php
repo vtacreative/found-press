@@ -38,7 +38,7 @@
 	</footer><!--/.row-->
 	<div class="row">
 		<div class"twelve columns c">
-			<p class="copyright">&copy; <?php echo date('Y'); ?> Awesome Client</p>
+			<p class="copyright">&copy; <?php echo date('Y'); ?> Awesome Client<span class="back-to-top right"><a href="#">Back to Top &#8593;</a></span></p>
 		</div>
 	</div>
 </div>

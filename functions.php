@@ -4,18 +4,18 @@
 /*	register and load our javascripts and styles  */
 function fp_scripts_styles () {
 	/*	js  */
-	wp_register_script('found-3.2', get_template_directory_uri() . '/js/3.2.min.js', true);
-	wp_register_script('mod-2.6.2', get_template_directory_uri() . '/js/vendor/mod-2.6.2.min.js', true);
-	wp_register_script('found-app', get_template_directory_uri() . '/js/app.js', true);
-	wp_register_script('plugins', get_template_directory_uri() . '/js/plugins.js', true);
+	wp_register_script('3.2js', get_template_directory_uri() . '/js/3.2.min.js', array(), null);
+	wp_register_script('mod-2.6.2', get_template_directory_uri() . '/js/vendor/mod-2.6.2.min.js', array(), null);
+	wp_register_script('found-app', get_template_directory_uri() . '/js/app.js', array(), null);
+	wp_register_script('plugins', get_template_directory_uri() . '/js/plugins.js', array(), null);
 	wp_enqueue_script('mod-2.6.2');
-	wp_enqueue_script('found-3.2');
+	wp_enqueue_script('3.2js');
 	wp_enqueue_script('found-app');
 	wp_enqueue_script('plugins');
 	/*	css	 */
-	wp_register_style('global', get_template_directory_uri() . '/style.css', null, 0.2, 'screen');
-	wp_register_style('foundation3.2', get_template_directory_uri() . '/css/3.2.min.css', array(), 'all');
-	wp_enqueue_style('foundation3.2');
+	wp_register_style('global', get_template_directory_uri() . '/style.css', array(), null, 'screen');
+	wp_register_style('3.2css', get_template_directory_uri() . '/css/3.2.min.css', array(), null, 'all');
+	wp_enqueue_style('3.2css');
 	wp_enqueue_style('global');
 }
 add_action('wp_enqueue_scripts', 'fp_scripts_styles', 5); //TODO: possibly alter or delete the $priority parameter
