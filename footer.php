@@ -4,7 +4,7 @@
 <div class="footer-container">
 	<footer class="row" role="contentinfo">
 		<div class="three columns">
-			<ul>
+			<ul class="no-bullet">
 				<li class="footer-subhead">Short bios are in</li>
 			</ul>
 			<small>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa.<small>
@@ -14,7 +14,7 @@
 			</form>
 		</div>
 		<div class="three columns">
-			<ul class="links">
+			<ul class="links no-bullet">
 				<li class="footer-subhead">Client</li>
 				<li><a href="">About</a></li>
 				<li><a href="">Map</a></li>
@@ -24,7 +24,7 @@
 			</ul>
 		</div>
 		<div class="three columns">
-			<ul>
+			<ul class="no-bullet">
 				<li class="footer-subhead">Fancy Badges</li>
 				<li><img src="http://www.placehold.it/150x40"></li>
 				<li><img src="http://www.placehold.it/150x40"></li>

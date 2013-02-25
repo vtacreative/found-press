@@ -854,33 +854,8 @@ textarea {
 
 
 
-/* Navigation */
-.nav {
-	text-align:right; }
-	
 
-	
-.nav ul li {
-	font-size:1em;
-	display:inline;
-	padding-left:4%;
-	background:yellow; }
-	
-.nav ul {
-	background:pink;
-	width:100%;
-}
-	
-.nav ul li a {
-	color:#707070;
-	font-size:16px; }
-	
-#searchform {
-	margin:12px 0 0 0;
-	padding:0; }
-	
-	
-/* General Typography Settings */
+/*  some general typography settings and adjustments */
 p, li {
 	font-size:18px;
 	color:#707070; }
@@ -893,14 +868,26 @@ a:hover,
 .green {
 	color:#81d742; }
 	
-ul, ol {
-	list-style-type:none; }
 	
 ul {
 	padding:0; }
 	
 ul li img {
 	margin:5px 0; }
+	
+
+/*  navigation-specific */
+.nav ul li {
+	font-size:1em;
+	display:inline;
+	padding-left:4%; }
+	
+#searchform {
+	margin:12px 0 0 0;
+	padding:0; }
+	
+	
+
 
 /* footer link list */
 ul.links {
@@ -918,7 +905,8 @@ footer[role='contentinfo'] {
 .footer-container {
 	border-top:solid 1px #b7b7b7;
 	background:#ebebeb;
-	padding:30px 0; }
+	padding:30px 0;
+	margin-top:100px; }
 	
 .footer-subhead {
 	font-weight:700; }
@@ -952,12 +940,7 @@ footer[role='contentinfo'] {
 	
 .featurette-image-right {
 	float:right; }
-	
-.text-right {
-	text-align:right; }
-	
-.right { float:right; }
-.left { float:left; }
+
 
 
 /* set custom background image to 100% width */
