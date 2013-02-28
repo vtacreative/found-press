@@ -56,7 +56,7 @@
 
 				<nav class="eight columns c" role="navigation">
 					<!-- remove 'text-right' class to float primary navigation back to the left -->
-					<?php wp_nav_menu(array('theme_location' => 'primary', 'menu_class' => 'nav text-right')); ?>
+					<?php wp_nav_menu(array('theme_location' => 'header-menu', 'container_class' => 'nav text-right')); ?>
 				</nav>
 
 				<?php $header_image = get_header_image();

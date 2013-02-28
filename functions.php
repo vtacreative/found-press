@@ -55,12 +55,11 @@ require(get_template_directory() . '/inc/custom-header.php');
 
 /*  support custom menus */
 function fp_menus() {
-  register_nav_menus(
-    array(
-      'header-menu' => __('Header'),
-      'extra-menu' => __('Footer')
-    )
-  );
+ 	register_nav_menus( 
+	array(
+		'header-menu' => 'Header Menu',
+		'footer-menu' => 'Footer Menu'
+	) );
 }
 add_action('init', 'fp_menus');
 
