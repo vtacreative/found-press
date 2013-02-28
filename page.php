@@ -1,5 +1,5 @@
 <?php
-/* Displays content when nothing more specific matches a query.
+/* Default page layout
    http://codex.wordpress.org/Template_Hierarchy */
 get_header(); ?>
 		<div class="row" role="main">
