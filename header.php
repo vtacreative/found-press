@@ -47,16 +47,26 @@
 	<div id="page" class="hfeed">
 		<div class="header-container">
 			<div class="row">
-	      <header class="four columns a" role="banner">
+	      <header class="four columns" role="banner">
 					<hgroup>
 						<h1><a href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home"><?php bloginfo('name'); ?></a></h1>
 						<h2><?php bloginfo('description'); ?></h2>
 					</hgroup>
 				</header>
 
-				<nav class="eight columns c" role="navigation">
+				<nav class="eight columns" role="navigation">
 					<!-- remove 'text-right' class to float primary navigation back to the left -->
-					<?php wp_nav_menu(array('theme_location' => 'header-menu', 'container_class' => 'nav text-right')); ?>
+					
+					<?php
+					// TODO:  if(is_user_logged_in()) {
+					//      wp_nav_menu(array( 'theme_location' => 'user-menu'));
+					// } else {
+					//      wp_nav_menu(array('theme_location' => 'default-menu'));
+					// }
+					?>
+					
+					
+					<?php wp_nav_menu(array('theme_location' => 'header-menu', 'container_class' => 'nav text-right', 'sort_column' => 'menu_order')); ?>
 				</nav>
 
 				<?php $header_image = get_header_image();
