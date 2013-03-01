@@ -868,7 +868,6 @@ a:hover,
 .green {
 	color:#81d742; }
 	
-	
 ul {
 	padding:0; }
 	
@@ -881,6 +880,14 @@ ul li img {
 	font-size:1em;
 	display:inline;
 	padding-left:4%; }
+	
+	
+	
+	
+
+	
+	
+	
 	
 #searchform {
 	margin:12px 0 0 0;
@@ -925,6 +932,10 @@ footer[role='contentinfo'] {
 .cntrd {
 	display:block;
 	margin:0 auto; }
+	
+.full-width {
+	width:100%;
+	margin-top:0; }
 
 .callout-link {
 	font-size:2em;
@@ -990,11 +1001,6 @@ div.centered {
    	various photo frame settings
 	hat tip: http://www.paulund.co.uk/creating-different-css3-box-shadows-effects
    ========================================================================== */
-
-.box h3 { 
-	text-align:center;
-	position:relative;
-	top:80px; }
 	
 .box {
 	width:320px;
@@ -1164,26 +1170,36 @@ body { background:#eee; }
 .rtl 	{ border-radius-top-left:10px; }
 .rbl 	{ border-radius-bottom-left:10px; }
 
-/*  HANDY COLOR SETTINGS FOR DIV POSITIONING 
-	https://gist.github.com/4657937 */
-.a { background: aqua;  		}
+
+/* EASILY CHECK DIV POSITIONING
+   https://gist.github.com/4657937 */
+.a { background: aqua;    	   	}
 .b { background: blue;			}
 .c { background: chartreuse; 	}
 .d { background: dodgerblue; 	}
+.e { background: beige;       	}
 .f { background: fuchsia; 		}
-.g { background: grey; 			}
+.g { background: green; 		}
 .h { background: hotpink; 		}
 .i { background: indigo; 		}
+.j { background: gold;      	}
 .k { background: khaki;     	}
-.l { background: limegreen;     }
+.l { background: limegreen;   	}
 .m { background: maroon;     	}
 .n { background: navy;     		}
 .o { background: orange; 		}
 .p { background: pink; 			}
+.q { background: turquoise;		}
 .r { background: red; 			}
+.s { background: SaddleBrown;	}
 .t { background: teal;     		}
+.u { background: AliceBlue;		}
 .v { background: violet;     	}
+.w { background: crimson;  		}	
+.x { background: coral;    		}
 .y { background: yellow; 		}
+.z { background: DarkMagenta; 	}
+
 /* GRAYSCALE */
 .g1 { background:#EBEBEB; }
 .g2 { background:#D7D7D7; }
