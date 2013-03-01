@@ -78,7 +78,7 @@ get_header(); ?>
 			<a class="callout-link" href="#">Perfectly Placed Call To Action ></a>
 			</div>
 			<div class="five columns">
-				<div class="box effect6">
+				<div class="box effect7">
 					<img src="http://lorempixel.com/320/240/city">
 				</div>
 			</div>

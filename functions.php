@@ -290,7 +290,7 @@ function create_testimonial() {
  
 	        'public' => true,
 	        'menu_position' => 5,
-	        'supports' => array('title', 'editor', 'comments', 'thumbnail'),
+	        'supports' => array('title', 'editor', 'thumbnail'),
 	        'taxonomies' => array(''),
 	        'menu_icon' => plugins_url('images/image.png', __FILE__ ),
 	        'has_archive' => true
@@ -315,11 +315,16 @@ function my_testimonial_admin() {
 /* display the meta box */
 function display_testimonial_meta_box($testimonial) {
     $testimonial_speaker = esc_html(get_post_meta($testimonial->ID, 'testimonial_speaker', true));
+	$testimonial_extra = esc_html(get_post_meta($testimonial->ID, 'testimonial_extra', true));
     ?>
     <table>
         <tr>
             <td style="width: 100%">Speaker</td>
-            <td><input type="text" size="80" name="testimonial_speaker" value="<?php echo $testimonial_speaker; ?>" /></td>
+            <td><input placeholder="i.e. James Jameson" type="text" size="80" name="testimonial_speaker" value="<?php echo $testimonial_speaker; ?>" /></td>
+        </tr>
+        <tr>
+            <td style="width: 100%">Extra</td>
+            <td><input placeholder="anything you want, could be a location or title" type="text" size="80" name="testimonial_extra" value="<?php echo $testimonial_extra; ?>" /></td>
         </tr>
     </table>
     <?php
@@ -332,6 +337,9 @@ function add_testimonial_fields($testimonial_id, $testimonial) {
 	if($testimonial->post_type == 'testimonials') {
 		if(isset($_POST['testimonial_speaker']) && $_POST['testimonial_speaker'] != '') {
 			update_post_meta($testimonial_id, 'testimonial_speaker', $_POST['testimonial_speaker']); 
+		}
+		if(isset($_POST['testimonial_extra']) && $_POST['testimonial_extra'] != '') {
+			update_post_meta($testimonial_id, 'testimonial_extra', $_POST['testimonial_extra']); 
 		}
 	}
 }

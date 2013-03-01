@@ -1120,7 +1120,9 @@ div.centered {
 	-o-transform:skew(8deg) rotate(3deg);
 	transform:skew(8deg) rotate(3deg); }
 	
-/*  top and bottom edges warped */
+/*  top and bottom edges warped
+ 	can simply be an extension of effect6, 
+	since only the "top:50%;" part is different */
 .effect7 {
 	position:relative;
 	-webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
@@ -1134,7 +1136,7 @@ div.centered {
     -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
     -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
     box-shadow:0 0 20px rgba(0,0,0,0.8);
-    top:0;
+    top:0; /* only difference from effect6 code */
     bottom:0;
     left:10px;
     right:10px;
