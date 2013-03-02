@@ -6,7 +6,7 @@ get_header(); ?>
 		<div class="row" role="main">
 
 			<?php
-			$mypost = array('post_type' => 'testimonials', );
+			$mypost = array('post_type' => 'testimonials');
 			$loop = new WP_Query($mypost);	
 			while($loop->have_posts()): $loop->the_post();
 			?>

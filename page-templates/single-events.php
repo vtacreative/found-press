@@ -10,11 +10,9 @@ get_header(); ?>
 			$loop = new WP_Query($mypost);	
 			while($loop->have_posts()): $loop->the_post();
 			?>
-			<div class="four columns panel end">
+			<div class="four columns end">
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 					<header>
-						<?php the_post_thumbnail(array(100, 100)); ?>
-						<h4><?php the_title(); ?></h4>
 						<?php echo esc_html(get_post_meta(get_the_ID(), 'event_date', true)); ?>
 						<p><?php the_content(); ?></p>
 						<a href="<?php echo esc_html(get_post_meta(get_the_ID(), 'link1_url', true)); ?>" target="_blank"><?php echo esc_html(get_post_meta(get_the_ID(), 'link1_text', true)); ?></a>

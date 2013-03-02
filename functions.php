@@ -349,8 +349,8 @@ function add_testimonial_fields($testimonial_id, $testimonial) {
 add_filter('template_include', 'include_testimonial_template', 1);
 function include_testimonial_template($template_path) {
 	if(get_post_type() == 'testimonials') {
-		if(is_single()) {
-			$theme_file = locate_template(array('single-testimonials.php'));
+		if(!is_single()) {
+			$theme_file = TEMPLATEPATH . '/page-templates/single-testimonials.php';
 			$template_path = $theme_file; 
 		}
 	}
