@@ -45,13 +45,8 @@ function fp_setup() {
 }
 add_action('after_setup_theme', 'fp_setup');
 
-
-
 /* support custom header image */
 require(get_template_directory() . '/inc/custom-header.php');
-
-
-
 
 /*  support custom menus */
 function fp_menus() {
@@ -63,10 +58,18 @@ function fp_menus() {
 }
 add_action('init', 'fp_menus');
 
+/*  support featured images */
+add_theme_support('post-thumbnails');
+
+
+
 
 
 /*  hide admin bar from front end view */
 add_filter('show_admin_bar', '__return_false');
+
+
+
 
 
 
