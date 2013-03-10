@@ -21,8 +21,15 @@ function fp_scripts_styles () {
 add_action('wp_enqueue_scripts', 'fp_scripts_styles', 5); //TODO: possibly alter or delete the $priority parameter
 
 
+/*  obscure the failed login message */
+function failed_login () {
+    return 'the login information you have entered is incorrect.'
+}
+add_filter ('login_errors', 'failed_login');
 
 
+/*  prevent unauthorized editor access */
+define ('DISALLOW_FILE_EDIT', true);
 
 
 
