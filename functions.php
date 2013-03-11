@@ -23,7 +23,7 @@ add_action('wp_enqueue_scripts', 'fp_scripts_styles', 5); //TODO: possibly alter
 
 /*  obscure the failed login message */
 function failed_login () {
-    return 'the login information you have entered is incorrect.'
+    return 'Your username and/or password is incorrect.';
 }
 add_filter ('login_errors', 'failed_login');
 
