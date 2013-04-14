@@ -137,7 +137,8 @@ div.centered {
 		
 	.nav {
 		display:table;
-		margin:0 auto; }
+		margin:0 auto;
+		background:red; }
 		
 		img.featurette-image-left,
 		img.featurette-image-right {
@@ -149,6 +150,22 @@ div.centered {
 }
 	
 	
+@media screen and (max-width:768px) {
+	
+	h1 {
+		display:block;
+		margin:0 auto;
+		color:red;
+	}
+	
+	.nav {
+		background:pink;
+	}
+	
+	
+	
+	
+}
 	
 	
 	

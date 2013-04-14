@@ -11,12 +11,12 @@ function fp_scripts_styles () {
 	wp_register_script('zepto', get_template_directory_uri() . '/js/vendor/zepto.js', array(), null);
 	wp_enqueue_script('zepto');
 	/*	css	 */
-	wp_register_style('global', get_stylesheet_uri(), array(), null, 'screen');
-	wp_enqueue_style('global');
 	wp_register_style('css', get_template_directory_uri() . '/css/4.1.1.min.css', array(), null, 'all');
 	wp_enqueue_style('css');
 	wp_register_style('normalize', get_template_directory_uri() . '/css/normalize.css', array(), null, 'all');
 	wp_enqueue_style('normalize');
+	wp_register_style('global', get_stylesheet_uri(), array(), null, 'screen');
+	wp_enqueue_style('global');
 }
 add_action('wp_enqueue_scripts', 'fp_scripts_styles', 5); //TODO: possibly alter or delete the $priority parameter
 
