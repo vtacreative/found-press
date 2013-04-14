@@ -96,17 +96,7 @@ footer[role='contentinfo'] {
 .callout-link {
 	font-size:2em;
 	display:block;
-	padding:60px 0 40px 0; }
-
-.featurette-image-left,
-.featurette-image-right {
-	margin:5% 0 0 0; }
-	
-.featurette-image-left {
-	float:left; }
-	
-.featurette-image-right {
-	float:right; }
+	margin:60px 0 40px 0; }
 
 
 
@@ -152,10 +142,8 @@ div.centered {
 	
 @media screen and (max-width:768px) {
 	
-	h1 {
-		display:block;
-		margin:0 auto;
-		color:red;
+	.row.featurettes {
+		text-align:center;
 	}
 	
 	.nav {
