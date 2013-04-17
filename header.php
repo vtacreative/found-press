@@ -42,9 +42,12 @@
     g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
     s.parentNode.insertBefore(g,s)}(document,'script'));
 </script>
+
+<!-- #TODO: wp_enqueue these -->
 <link rel="stylesheet" href="http://www.zurb.com/assets/foundation.top-bar.css">
 <link rel="stylesheet" href="http://www.zurb.com/assets/zurb.mega-drop.css">
-	<link rel="stylesheet" href="stylesheets/presentation.css">
+<link rel="stylesheet" href="stylesheets/presentation.css">
+<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
 </head>
 <body <?php body_class(); ?>>
 	<div id="page" class="hfeed">

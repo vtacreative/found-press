@@ -12,17 +12,23 @@ Tags: responsive, fluid, mobile, mobile-friendly
 
 
 /*  some general typography settings and adjustments */
+body { font-family:'Droid Sans'; }
+
+h1 {
+	font-family:'Droid Sans';
+}
+
 p, li {
-	font-size:18px;
-	color:#707070; }
+	font-size:20px;
+	color:#707070;
+	line-height:220%; }
 	
 a {
 	color:#707070; }
 	
 a:hover, 
-.nav ul li a:hover,
-.green {
-	color:#81d742; }
+.nav ul li a:hover, {
+	color:red; }
 	
 ul {
 	padding:0; }
@@ -97,6 +103,12 @@ footer[role='contentinfo'] {
 	font-size:2em;
 	display:block;
 	margin:60px 0 40px 0; }
+	
+div.box.left {
+	float:left; }
+	
+div.box.right {
+	float:right; }
 
 
 
@@ -109,7 +121,16 @@ body.custom-background {
 	margin:0 auto; }
 	
 div.centered {
-	text-align:center;
+	text-align:center; }
+
+
+.read-more-1 {
+	margin:100px 0 0 0;
+	padding:0 12px;
+	font-size:3em;
+	background:black;
+	border-radius:15px;
+	line-height:100%;
 }
 
 
@@ -118,40 +139,49 @@ div.centered {
    Media Queries
    ========================================================================== */
 
+/* Target all devices 480px wide or less */
+@media screen and (max-width: 480px)	{
+
+
+		
+}
+
+
+
+
 /* Target all devices 600px wide or less */
 @media screen and (max-width: 600px)	{
-	
-	header[role='banner'],
-	nav[role='navigation'] {
-		text-align:center; }
 		
-	.nav {
-		display:table;
-		margin:0 auto;
-		background:red; }
 		
-		img.featurette-image-left,
-		img.featurette-image-right {
-			float:none;
-			display:block;
-			margin:0 auto;
-			padding:0 auto;
-		}
 }
+
+
+
 	
 	
 @media screen and (max-width:768px) {
 	
+	header[role='banner'],
+	nav[role='navigation'] {
+		text-align:center; }
+	
 	.row.featurettes {
-		text-align:center;
-	}
+		text-align:center;	}
 	
 	.nav {
-		background:;
+		background:; }
+		
+	ul#menu-header-menu {
+		text-align:center; }
+	
+	div.box.left,
+	div.box.right {
+		float:none;
+		background:#888; }
+		
+	div.box.left {
+		float:none;
 	}
-	
-	
-	
 	
 }
 	

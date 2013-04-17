@@ -21,6 +21,10 @@ function fp_scripts_styles () {
 add_action('wp_enqueue_scripts', 'fp_scripts_styles', 5); //TODO: possibly alter or delete the $priority parameter
 
 
+/* restore Link Manager that existed in WordPress until version 3.5 */
+add_filter( 'pre_option_link_manager_enabled', '__return_true' );
+
+
 /*  obscure the failed login message */
 function failed_login () {
     return 'Your username and/or password is incorrect.';

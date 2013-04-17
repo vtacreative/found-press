@@ -3,6 +3,7 @@
 ?>
 	<div class="footer-container">
 		<footer class="row" role="contentinfo">
+			<!-- footer col 1 -->
 			<div class="large-3 columns">
 				<ul class="no-bullet">
 					<li class="footer-subhead">Short bios are in</li>
@@ -13,7 +14,8 @@
 					<input type="submit" id="searchsubmit" value="go" />
 				</form>
 			</div>
-			<div class="large-3 columns">
+			<!-- footer col 2 -->
+			<div class="large-2 columns">
 				<ul class="links no-bullet">
 					<li class="footer-subhead">Client</li>
 					<li><a href="">About</a></li>
@@ -23,7 +25,19 @@
 					<li><a href="">Terms</a></li>
 				</ul>
 			</div>
-			<div class="large-3 columns">
+			<!-- footer col 3 -->
+			<div class="large-2 columns">
+				<ul class="links no-bullet">
+					<li class="footer-subhead">Client</li>
+					<li><a href="">About</a></li>
+					<li><a href="">Map</a></li>
+					<li><a href="">Blog</a></li>
+					<li><a href="">Privacy</a></li>
+					<li><a href="">Terms</a></li>
+				</ul>
+			</div>
+			<!-- footer col 4 -->
+			<div class="large-2 columns">
 				<ul class="no-bullet">
 					<li class="footer-subhead">Fancy Badges</li>
 					<li><img src="http://www.placehold.it/150x40"></li>
@@ -31,6 +45,7 @@
 					<li><img src="http://www.placehold.it/150x40"></li>
 				</ul>
 			</div>
+			<!-- footer col 5 -->
 			<div class="large-3 columns">
 				<h2 class="footer-callout">"Let me tell you about how fantastically awesome I am."</h2>
 				<p class="">&mdash;<i>Owner</i></p>
