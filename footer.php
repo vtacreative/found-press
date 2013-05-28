@@ -1,64 +1,95 @@
 <?php
-/* footer content */
+/* FOOTER */
 ?>
-	<div class="footer-container">
-		<footer class="row" role="contentinfo">
-			<!-- footer col 1 -->
-			<div class="large-3 columns">
-				<ul class="no-bullet">
-					<li class="footer-subhead">Short bios are in</li>
-				</ul>
-				<small>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa.<small>
-				<form class="cntrd" role="search" method="get" id="searchform" action="<?php echo esc_url(home_url('/')); ?>">
-					<input class="r10" type="text" value="Search" name="s" id="s" />
-					<input type="submit" id="searchsubmit" value="go" />
-				</form>
-			</div>
-			<!-- footer col 2 -->
-			<div class="large-2 columns">
-				<ul class="links no-bullet">
-					<li class="footer-subhead">Client</li>
-					<li><a href="">About</a></li>
-					<li><a href="">Map</a></li>
-					<li><a href="">Blog</a></li>
-					<li><a href="">Privacy</a></li>
-					<li><a href="">Terms</a></li>
-				</ul>
-			</div>
-			<!-- footer col 3 -->
-			<div class="large-2 columns">
-				<ul class="links no-bullet">
-					<li class="footer-subhead">Client</li>
-					<li><a href="">About</a></li>
-					<li><a href="">Map</a></li>
-					<li><a href="">Blog</a></li>
-					<li><a href="">Privacy</a></li>
-					<li><a href="">Terms</a></li>
-				</ul>
-			</div>
-			<!-- footer col 4 -->
-			<div class="large-2 columns">
-				<ul class="no-bullet">
-					<li class="footer-subhead">Fancy Badges</li>
-					<li><img src="http://www.placehold.it/150x40"></li>
-					<li><img src="http://www.placehold.it/150x40"></li>
-					<li><img src="http://www.placehold.it/150x40"></li>
-				</ul>
-			</div>
-			<!-- footer col 5 -->
-			<div class="large-3 columns">
-				<h2 class="footer-callout">"Let me tell you about how fantastically awesome I am."</h2>
-				<p class="">&mdash;<i>Owner</i></p>
-			</div>
-		</footer><!--/.row-->
-	
+	<footer class="footer-container">
 		<div class="row">
-			<div class="large-12 columns">
-				<p class="copyright">&copy; <?php echo date('Y'); ?> Awesome Client<span class="back-to-top right"><a href="#">Back to Top &#8593;</a></span></p>
+			
+			<!-- COL1 -->
+			<div class="large-3 columns">
+				<p>For rapid deployment of WordPress themes. <br><a href="">Learn More &rarr;</a></p>
 			</div>
+			<!-- COL2 -->
+			<div class="large-2 columns">
+				<ul class="no-bullet">
+					<li>Link Widget</li>
+					<li><a href="">Link 1</a></li>
+					<li><a href="">Link 2</a></li>
+					<li><a href="">Link 3</a></li>
+					<li><a href="">Link 4</a></li>
+					<li><a href="">Link 5</a></li>
+				</ul>
+			</div>
+			<!-- COL3 -->
+			<div class="large-2 columns">
+				<ul class="no-bullet">
+					<li>Client</li>
+					<li><a href="">About</a></li>
+					<li><a href="">Map</a></li>
+					<li><a href="">Blog</a></li>
+					<li><a href="">Privacy</a></li>
+					<li><a href="">Terms</a></li>
+				</ul>
+			</div>
+			<!-- COL4 -->
+			<div class="large-2 columns">
+				<img src="http://www.placehold.it/150x40"><br><br>
+				<img src="http://www.placehold.it/150x40"><br><br>
+				<img src="http://www.placehold.it/150x40">
+			</div>
+			<!-- COL5 -->
+			<div class="large-3 columns">
+				<h4>"Let me tell you about how fantastically awesome this business is."</h4>
+				<p>&mdash;<i>Happy Customer</i></p>
+			</div>
+
 		</div>
-	</div><!--.footer-container-->
-</div><!--/#page-->
+	</footer>
+
+</div>
+
+<!-- COPYRIGHT -->
+<div class="row">
+	<div class="large-12 columns">
+		<p class="copyright">By <a href="https://github.com/CL75">CL75</a>. A work in progress... <span style="font-size:24px;" class="scroll right"><a href="#top"><i class="enclosed foundicon-up-arrow"></i></a></span></p>
+	</div>
+</div>
+
+
+<script>
+  document.write('<script src=/js/vendor/'
+    + ('__proto__' in {} ? 'zepto' : 'jquery')
+    + '.js><\/script>');
+</script>
+
+<script>
+  $(function(){
+    $(document).foundation('orbit', {
+		timer_speed: 10000,
+		animation_speed: 500,
+		timer_container_class: false,
+		slide_number: false
+	});    
+  })
+</script>
+
+<script>
+$(function() {
+    $('span.scroll a').bind('click',function(event){
+        var $anchor = $(this);
+ 
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top
+        }, 1000);
+        /*
+        if you don't want to use the easing effects:
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top
+        }, 1000);
+        */
+        event.preventDefault();
+    });
+});
+</script>
 <?php wp_footer(); ?>
 </body>
 </html>

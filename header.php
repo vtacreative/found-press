@@ -44,20 +44,24 @@
 </script>
 
 <!-- #TODO: wp_enqueue these -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,700'>
+
+<!-- #OPTIONAL: for Foundation Mega dropdown
 <link rel="stylesheet" href="http://www.zurb.com/assets/foundation.top-bar.css">
 <link rel="stylesheet" href="http://www.zurb.com/assets/zurb.mega-drop.css">
 <link rel="stylesheet" href="stylesheets/presentation.css">
-<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+-->
+
 </head>
 <body <?php body_class(); ?>>
+	<a id="top"></a>
 	<div id="page" class="hfeed">
-		<div class="header-container">
+		<div class="header-container dark-wall">
 			<div class="row">
 	      		<header class="large-4 columns" role="banner">
-					<hgroup>
-						<h1><a href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home"><?php bloginfo('name'); ?></a></h1>
-						<h2><?php bloginfo('description'); ?></h2>
-					</hgroup>
+					<h1><a href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home"><?php bloginfo('name'); ?></a></h1>
+					<h2><?php bloginfo('description'); ?></h2>
 				</header>
 
 				<nav class="large-8 columns" role="navigation">
