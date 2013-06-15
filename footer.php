@@ -10,14 +10,7 @@
 			</div>
 			<!-- COL2 -->
 			<div class="large-2 columns">
-				<ul class="no-bullet">
-					<li>Link Widget</li>
-					<li><a href="">Link 1</a></li>
-					<li><a href="">Link 2</a></li>
-					<li><a href="">Link 3</a></li>
-					<li><a href="">Link 4</a></li>
-					<li><a href="">Link 5</a></li>
-				</ul>
+				<?php wp_nav_menu(array('theme_location' => 'footer-menu', 'container_class' => 'nav', 'sort_column' => 'menu_order')); ?>
 			</div>
 			<!-- COL3 -->
 			<div class="large-2 columns">

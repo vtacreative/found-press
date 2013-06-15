@@ -1,5 +1,4 @@
 <?php
-http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js
 
 /*	register and load our javascripts and styles  */
 function fp_scripts_styles () {
@@ -48,8 +47,6 @@ remove_action('wp_head', 'adjacent_posts_rel_link');
 
 
 
-
-
 /*	support custom background color  */
 function fp_setup() {
 	add_theme_support('custom-background', array('default-color' => 'ffffff'));
@@ -73,7 +70,11 @@ add_action('init', 'fp_menus');
 add_theme_support('post-thumbnails');
 
 
-
+/* customize the number of characters that comprises an excerpt */
+function be_excerpt_length( $length ) { 
+	$length = '40'; 
+	return $length; 
+	}
 
 
 /*  hide admin bar from front end view */
