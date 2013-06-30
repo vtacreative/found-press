@@ -2,7 +2,7 @@
 /* Displays content when nothing more specific matches a query.
    http://codex.wordpress.org/Template_Hierarchy */
 get_header(); ?>
-		<div class="row a" role="main">
+		<div class="row" role="main">
 			<div class="nine columns page">
 				<?php if(have_posts()): // start loop if posts exist ?>
 					<?php while(have_posts()): the_post(); ?>
