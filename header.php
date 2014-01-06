@@ -43,15 +43,8 @@
     s.parentNode.insertBefore(g,s)}(document,'script'));
 </script>
 
-<!-- #TODO: wp_enqueue these -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<!-- #TODO: wp_enqueue this -->
 <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,700'>
-
-<!-- #OPTIONAL: for Foundation Mega dropdown
-<link rel="stylesheet" href="http://www.zurb.com/assets/foundation.top-bar.css">
-<link rel="stylesheet" href="http://www.zurb.com/assets/zurb.mega-drop.css">
-<link rel="stylesheet" href="stylesheets/presentation.css">
--->
 
 </head>
 <body <?php body_class(); ?>>

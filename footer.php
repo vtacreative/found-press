@@ -45,14 +45,9 @@
 	<div class="large-12 columns">
 		<p class="copyright">By <a href="https://github.com/CL75">CL75</a>. A work in progress... <span style="font-size:24px;" class="scroll right"><a href="#top"><i class="enclosed foundicon-up-arrow"></i></a></span></p>
 	</div>
-</div>
+</div> 
 
-
-<script>
-  document.write('<script src=/js/vendor/'
-    + ('__proto__' in {} ? 'zepto' : 'jquery')
-    + '.js><\/script>');
-</script>
+<?php echo '<script src="' . get_theme_root_uri() .'/found-press/js/jquery.js"></script>'; ?>
 
 <script>
   $(function(){

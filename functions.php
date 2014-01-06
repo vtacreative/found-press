@@ -3,14 +3,12 @@
 /*	register and load our javascripts and styles  */
 function fp_scripts_styles () {
 	/*	js  */
-	wp_register_script('js', get_template_directory_uri() . '/js/4.1.1.min.js', array(), null, true);
+	wp_register_script('js', get_template_directory_uri() . '/js/foundation.min.js', array(), null, true);
 	wp_enqueue_script('js');
-	wp_register_script('modernizr', get_template_directory_uri() . '/js/vendor/custom.modernizr.js', array(), null);
+	wp_register_script('modernizr', get_template_directory_uri() . '/js/modernizr.js', array(), null);
 	wp_enqueue_script('modernizr');
-	wp_register_script('zepto', get_template_directory_uri() . '/js/vendor/zepto.js', array(), null, true);
-	wp_enqueue_script('zepto');
 	/*	css	 */
-	wp_register_style('css', get_template_directory_uri() . '/css/4.1.1.min.css', array(), null, 'all');
+	wp_register_style('css', get_template_directory_uri() . '/css/foundation.min.css', array(), null, 'all');
 	wp_enqueue_style('css');
 	wp_register_style('normalize', get_template_directory_uri() . '/css/normalize.css', array(), null, 'all');
 	wp_enqueue_style('normalize');
