@@ -5,21 +5,28 @@
 function fp_scripts_styles () {
 	
 	/*	js  */
-	wp_register_script('js', get_template_directory_uri() . '/js/foundation.5.2.3.min.js', array(), null, true);
-	wp_enqueue_script('js');
+	wp_register_script('foundation', get_template_directory_uri() . '/js/foundation.5.2.3.min.js', array(), null, true);
+	wp_enqueue_script('foundation');
 	
 	wp_register_script('modernizr', get_template_directory_uri() . '/js/vendor/modernizr.js', array(), null);
 	wp_enqueue_script('modernizr');
 	
+	wp_register_script('slick', '//cdn.jsdelivr.net/jquery.slick/1.3.6/slick.min.js', array(), null, true);
+	wp_enqueue_script('slick');
+	
 	/*	css	 */
-	wp_register_style('css', get_template_directory_uri() . '/css/foundation.5.2.3.min.css', array(), null, 'all');
-	wp_enqueue_style('css');
+	wp_register_style('foundation', get_template_directory_uri() . '/css/foundation.5.2.3.min.css', array(), null, 'all');
+	wp_enqueue_style('foundation');
 	
 	wp_register_style('normalize', get_template_directory_uri() . '/css/normalize.css', array(), null, 'all');
 	wp_enqueue_style('normalize');
 	
 	wp_register_style('global', get_stylesheet_uri(), array(), null, 'screen');
 	wp_enqueue_style('global');
+	
+	wp_register_style('slick', '//cdn.jsdelivr.net/jquery.slick/1.3.6/slick.css', array(), null, 'screen');
+	wp_enqueue_style('slick');
+
 }
 
 add_action('wp_enqueue_scripts', 'fp_scripts_styles', 5); //TODO: possibly alter or delete the $priority parameter

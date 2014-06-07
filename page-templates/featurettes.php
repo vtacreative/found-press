@@ -4,7 +4,11 @@ get_header(); ?>
 
 	<!-- SLICK SLIDER -->
 	<section>
-
+		<div class="slider single-item">
+		  <div><img src="http://placehold.it/1400x450&amp;text={under-construction}"></div>
+		  <div><img src="http://placehold.it/1400x450&amp;text={a-work-in-progress}"></div>
+		  <div><img src="http://placehold.it/1400x450&amp;text={code-in-development}"></div>
+		</div>
 	</section>
 	
 	<!-- 3-UP MARKETING SECTION -->

@@ -47,7 +47,7 @@
 	</div>
 </div> 
 
-<?php echo '<script src="' . get_theme_root_uri() .'/found-press/js/jquery.js"></script>'; ?>
+<?php echo '<script src="' . get_theme_root_uri() .'/found-press/js/vendor/jquery.js"></script>'; ?>
 
 <script>
 $(function() {
@@ -68,5 +68,6 @@ $(function() {
 });
 </script>
 <?php wp_footer(); ?>
+<script type='text/javascript' src="<?php echo get_theme_root_uri() . '/found-press/js/slick-slider.js'; ?>"></script>
 </body>
 </html>
