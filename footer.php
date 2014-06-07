@@ -50,17 +50,6 @@
 <?php echo '<script src="' . get_theme_root_uri() .'/found-press/js/jquery.js"></script>'; ?>
 
 <script>
-  $(function(){
-    $(document).foundation('orbit', {
-		timer_speed: 10000,
-		animation_speed: 500,
-		timer_container_class: false,
-		slide_number: false
-	});    
-  })
-</script>
-
-<script>
 $(function() {
     $('span.scroll a').bind('click',function(event){
         var $anchor = $(this);

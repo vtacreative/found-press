@@ -2,19 +2,9 @@
 /* Template Name: Featurettes */
 get_header(); ?>
 
-	<!-- ORBIT SLIDER -->
+	<!-- SLICK SLIDER -->
 	<section>
-		<ul data-orbit>
-		  <li>
-		    <img src="http://placehold.it/1400x450&amp;text={under-construction}">
-		  </li>
-		  <li>
-		    <img src="http://placehold.it/1400x450&amp;text={a-work-in-progress}">
-		  </li>
-		  <li>
-		    <img src="http://placehold.it/1400x450&amp;text={code-in-development}">
-		  </li>
-		</ul>
+
 	</section>
 	
 	<!-- 3-UP MARKETING SECTION -->

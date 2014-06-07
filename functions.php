@@ -1,40 +1,56 @@
 <?php
 
-/*	register and load our javascripts and styles  */
+/*	REGISTER JS & CSS  */
+	
 function fp_scripts_styles () {
+	
 	/*	js  */
-	wp_register_script('js', get_template_directory_uri() . '/js/foundation.min.js', array(), null, true);
+	wp_register_script('js', get_template_directory_uri() . '/js/foundation.5.2.3.min.js', array(), null, true);
 	wp_enqueue_script('js');
-	wp_register_script('modernizr', get_template_directory_uri() . '/js/modernizr.js', array(), null);
+	
+	wp_register_script('modernizr', get_template_directory_uri() . '/js/vendor/modernizr.js', array(), null);
 	wp_enqueue_script('modernizr');
+	
 	/*	css	 */
-	wp_register_style('css', get_template_directory_uri() . '/css/foundation.min.css', array(), null, 'all');
+	wp_register_style('css', get_template_directory_uri() . '/css/foundation.5.2.3.min.css', array(), null, 'all');
 	wp_enqueue_style('css');
+	
 	wp_register_style('normalize', get_template_directory_uri() . '/css/normalize.css', array(), null, 'all');
 	wp_enqueue_style('normalize');
+	
 	wp_register_style('global', get_stylesheet_uri(), array(), null, 'screen');
 	wp_enqueue_style('global');
 }
+
 add_action('wp_enqueue_scripts', 'fp_scripts_styles', 5); //TODO: possibly alter or delete the $priority parameter
 
 
-/* restore Link Manager that existed in WordPress until version 3.5 */
+
+
+/* RESTORE LINK MANAGER THAT EXISTED IN WP < 3.5 */
 add_filter( 'pre_option_link_manager_enabled', '__return_true' );
 
 
-/*  obscure the failed login message */
+
+
+/*  OBSCURE FAILED LOGIN MESSAGE */
 function failed_login () {
+	
     return 'Your username and/or password is incorrect.';
+
 }
+
 add_filter ('login_errors', 'failed_login');
 
 
-/*  prevent unauthorized editor access */
+
+
+/*  PREVENT UNAUTHORIZED EDITOR ACCESS */
 define ('DISALLOW_FILE_EDIT', true);
 
 
 
-/*  clean up the output of wp_head */
+/*  TRIM OUTPUT OF wp_head */
 remove_action('wp_head', 'rsd_link');
 remove_action('wp_head', 'wlwmanifest_link');
 remove_action('wp_head', 'wp_generator');
@@ -45,47 +61,69 @@ remove_action('wp_head', 'adjacent_posts_rel_link');
 
 
 
-/*	support custom background color  */
+/*	SUPPORT NATIVE WP CUSTOM BACKGROUND COLOR  */
 function fp_setup() {
+	
 	add_theme_support('custom-background', array('default-color' => 'ffffff'));
+	
 }
+
 add_action('after_setup_theme', 'fp_setup');
 
-/* support custom header image */
+
+
+
+/*  SUPPORT CUSTOM HEADER IMAGE */
 require(get_template_directory() . '/inc/custom-header.php');
 
-/*  support custom menus */
+
+
+
+/*  SUPPORT CUSTOM MENUS */
 function fp_menus() {
+	
  	register_nav_menus( 
-	array(
-		'header-menu' => 'Header Menu',
-		'footer-menu' => 'Footer Menu'
-	) );
+		array(
+			'header-menu' => 'Header Menu',
+			'footer-menu' => 'Footer Menu'
+		) 
+	);
 }
+
 add_action('init', 'fp_menus');
 
-/*  support featured images */
+
+
+
+/*  SUPPORT FEATURED IMAGES */
 add_theme_support('post-thumbnails');
 
 
-/* customize the number of characters that comprises an excerpt */
+
+
+/* CUSTOMIZE EXCERPT CHAR COUNT */
 function be_excerpt_length( $length ) { 
+	
 	$length = '40'; 
-	return $length; 
+	
+	return $length;
+	 
 	}
 
 
-/*  hide admin bar from front end view */
+
+
+/*  HIDE ADMIN PANEL FROM FRONT END */
 add_filter('show_admin_bar', '__return_false');
 
 
 
 
-
-
-/*	generate post metadata  */
+/*	GENERATE POST META  */
 function fp_meta() {
+	
 	$categories_list = get_the_category_list(__(', '));
+	
 	$tag_list = get_the_tag_list('', __(', '));
 
 	$date = sprintf('<a href="%1$s" title="%2$s" rel="bookmark"><time class="entry-date" datetime="%3$s">%4$s</time></a>',
