@@ -69,5 +69,10 @@ $(function() {
 </script>
 <?php wp_footer(); ?>
 <script type='text/javascript' src="<?php echo get_theme_root_uri() . '/found-press/js/slick-slider.js'; ?>"></script>
+<!-- POLYFILL TO ADDRESS IE8's LACK OF REM UNIT SUPPORT
+ 		 http://foundation.zurb.com/forum/posts/241-foundation-5-and-ie8 -->
+<!--[if lt IE 9]>  
+<script src="/wp-content/themes/found-press/js/rem.min.js"></script>
+<![endif]-->
 </body>
 </html>
