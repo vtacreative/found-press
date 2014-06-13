@@ -44,7 +44,7 @@
 </script>
 
 <!-- #TODO: wp_enqueue this -->
-<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,700'>
+
 
 </head>
 <body <?php body_class(); ?>>
@@ -52,14 +52,16 @@
 	<div id="page" class="hfeed">
 		<div class="header-container dark-wall">
 			<div class="row">
-	      		<header class="large-4 columns" role="banner">
-					<h1><a href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home"><?php bloginfo('name'); ?></a></h1>
+	      <header class="large-4 columns" role="banner">
+					<h1 class="logo"><a href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home"><?php bloginfo('name'); ?></a></h1>
+					<?php if(bloginfo('description')) : ?>
 					<h2><?php bloginfo('description'); ?></h2>
+					<?php endif; ?>
 				</header>
 
-				<nav class="large-8 columns" role="navigation">
+				<nav class="large-8 columns">
 					<!-- remove 'text-right' class to float primary navigation back to the left -->
-					<?php wp_nav_menu(array('theme_location' => 'header-menu', 'container_class' => 'nav text-right', 'sort_column' => 'menu_order')); ?>
+					<?php wp_nav_menu(array('theme_location' => 'header-menu', 'container_class' => 'nav table text-right', 'sort_column' => 'menu_order')); ?>
 				</nav>
 
 				<?php $header_image = get_header_image();

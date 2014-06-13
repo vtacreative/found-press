@@ -9,8 +9,12 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: responsive, fluid, mobile, mobile-friendly
 */
 
-body, h1, h2, h3, h4, h5, h6, p, a, li {
-	font-family: 'Open Sans', sans-serif; } 
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Verdana', sans-serif; }
+	
+h1.logo {
+	padding:4px 0;
+	margin:0; } 
 	
 p, li {
 	font-size:16px;
@@ -23,7 +27,7 @@ a:hover {
 	color:#457a1a;; }
 	
 .nav {
-	padding:36px 0 0 0; }
+	padding:2% 0 0 0; }
 	
 .row.featurettes {
 	padding-bottom:65px; }
@@ -57,7 +61,7 @@ footer ul {
 	padding:100px 0 35px 0; }
 	
 .tertiary {
-	padding:75px; }
+	padding:75px 0; }
 	
 .secondary img {
 	border:solid 2px #5da423;
@@ -68,12 +72,6 @@ footer ul {
 	float:right;
 	font-size:80px;
 	margin:10px 10px 65px 0; }
-	
-body, .wall {
-	background:#000 url(/integrity/wp-content/themes/fp-child/images/wall4.png); }
-	
-.dark-wall {
-	background:#000 url(/integrity/wp-content/themes/fp-child/images/dark_wall.png); }
 
 
 
@@ -81,9 +79,11 @@ body, .wall {
 
 /*  navigation-specific */
 .nav ul li {
-	font-size:1em;
+	font-family: 'Arial Black', sans-serif;
+	font-size:.8em;
 	display:inline;
-	padding-left:4%; }
+	padding-left:7px;
+	text-transform:uppercase; }
 	
 #searchform {
 	margin:0;
@@ -142,30 +142,26 @@ body.custom-background {
 
 	
 	
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
 	
-	header[role='banner'],
-	nav[role='navigation'] {
-		text-align:center; }
-	
-	.row.featurettes {
-		text-align:center;	}
-	
-	.nav {
-		background:; }
-		
-	ul#menu-header-menu {
-		text-align:center; }
-	
-	div.box.left,
-	div.box.right {
-		float:none;
-		background:#888; }
-		
-	div.box.left {
-		float:none;
+	header[role='banner'] {
+		text-align:center;
 	}
 	
+	ul#menu-header-menu li {
+		background:yellow;
+		display:inline;
+		padding:5px;
+	}
+	
+	.table {
+		display:table;
+		margin:0 auto;
+		background:white;
+	}
+	
+	.nav ul li {
+		font-size:.7em; }
 }
 
 
@@ -924,3 +920,9 @@ body { background:#eee; }
 .g7 { background:#626262; }
 .g8 { background:#464646; }
 .g9 { background:#262626; }
+
+
+
+
+
+

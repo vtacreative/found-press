@@ -167,11 +167,7 @@ function fp_meta() {
 
 
 
-
-
-
-
-/*	register widgets  */
+/*	REGISTER WIDGETS  */
 function fp_widgets_init() {
 	register_sidebar( array(
 		'name' => __('Main Sidebar'),
@@ -184,3 +180,21 @@ function fp_widgets_init() {
 	));
 }
 add_action('widgets_init', 'fp_widgets_init');
+
+
+
+
+/*  REMOVE CLASS FROM NAV UL LI */
+add_filter('nav_menu_item_id', 'clear_nav_menu_item_id', 10, 3);
+function clear_nav_menu_item_id($id, $item, $args) {
+    return "";
+}
+
+add_filter('nav_menu_css_class', 'clear_nav_menu_item_class', 10, 3);
+function clear_nav_menu_item_class($classes, $item, $args) {
+    return array();
+}
+
+
+
+
