@@ -26,6 +26,9 @@ a {
 a:hover {
 	color:#457a1a;; }
 	
+.header-container {
+	background:black; }
+	
 .nav {
 	padding:2% 0 0 0; }
 	

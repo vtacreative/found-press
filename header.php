@@ -50,7 +50,7 @@
 <body <?php body_class(); ?>>
 	<a id="top"></a>
 	<div id="page" class="hfeed">
-		<div class="header-container dark-wall">
+		<div class="header-container">
 			<div class="row">
 	      <header class="large-4 columns" role="banner">
 					<h1 class="logo"><a href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home"><?php bloginfo('name'); ?></a></h1>

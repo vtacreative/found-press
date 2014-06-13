@@ -96,7 +96,7 @@ get_header(); ?>
 </section>
 
 <!-- SECONDARY MARKETING -->
-<section class="secondary dark-wall">
+<section class="secondary">
 	
 	<!-- ROW1 -->
 	<div class="row">

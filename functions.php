@@ -18,14 +18,8 @@ function fp_scripts_styles () {
 	wp_register_style('foundation', get_template_directory_uri() . '/css/foundation.5.2.3.min.css', array(), null, 'all');
 	wp_enqueue_style('foundation');
 	
-	wp_register_style('normalize', get_template_directory_uri() . '/css/normalize.css', array(), null, 'all');
-	wp_enqueue_style('normalize');
-	
 	wp_register_style('global', get_stylesheet_uri(), array(), null, 'screen');
 	wp_enqueue_style('global');
-	
-	wp_register_style('slick', '//cdn.jsdelivr.net/jquery.slick/1.3.6/slick.css', array(), null, 'screen');
-	wp_enqueue_style('slick');
 
 }
 
