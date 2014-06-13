@@ -25,9 +25,7 @@
 			</div>
 			<!-- COL4 -->
 			<div class="large-2 columns">
-				<img src="http://www.placehold.it/150x40"><br><br>
-				<img src="http://www.placehold.it/150x40"><br><br>
-				<img src="http://www.placehold.it/150x40">
+				<p>Fancy Badges Go Here</p>
 			</div>
 			<!-- COL5 -->
 			<div class="large-3 columns">
@@ -50,6 +48,7 @@
 <?php echo '<script src="' . get_theme_root_uri() .'/found-press/js/vendor/jquery.js"></script>'; ?>
 
 <script>
+// 	SCROLL TO TOP
 $(function() {
     $('span.scroll a').bind('click',function(event){
         var $anchor = $(this);
@@ -66,13 +65,29 @@ $(function() {
         event.preventDefault();
     });
 });
+
+
+//	INITIALIZE FASTCLICK
+window.addEventListener('load', function() {
+    new FastClick(document.body);
+}, false);
+
+
+//	INITIALIZE FOUNDATION JS
+$(document).foundation();
 </script>
+
 <?php wp_footer(); ?>
-<script type='text/javascript' src="<?php echo get_theme_root_uri() . '/found-press/js/slick-slider.js'; ?>"></script>
-<!-- POLYFILL TO ADDRESS IE8's LACK OF REM UNIT SUPPORT
- 		 http://foundation.zurb.com/forum/posts/241-foundation-5-and-ie8 -->
-<!--[if lt IE 9]>  
-<script src="/wp-content/themes/found-press/js/vendor/rem.min.js"></script>
-<![endif]-->
+<script>
+//	INITIALIZE SLICK SLIDER
+$(document).ready(function(){
+	$('.single-item').slick({
+	  dots: true,
+		speed: 500,
+		arrows: true,
+		autoplay: true
+	});
+});
+</script>
 </body>
 </html>

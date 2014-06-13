@@ -11,9 +11,6 @@ function fp_scripts_styles () {
 	wp_register_script('modernizr', get_template_directory_uri() . '/js/vendor/modernizr.js', array(), null);
 	wp_enqueue_script('modernizr');
 	
-	wp_register_script('slick', '//cdn.jsdelivr.net/jquery.slick/1.3.6/slick.min.js', array(), null, true);
-	wp_enqueue_script('slick');
-	
 	/*	css	 */
 	wp_register_style('foundation', get_template_directory_uri() . '/css/foundation.5.2.3.min.css', array(), null, 'all');
 	wp_enqueue_style('foundation');

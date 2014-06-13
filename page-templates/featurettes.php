@@ -5,12 +5,12 @@ get_header(); ?>
 
 
 <!-- SLICK SLIDER
- 			Something about the slider causes horizontal scrolling on 320 portrait -->
+ 			Something about the slider causes light horizontal scrolling on 320 portrait -->
 <section>
 	<div class="slider single-item">
-	  <div><img src="http://placehold.it/1400x450&amp;text={under-construction}"></div>
-	  <div><img src="http://placehold.it/1400x450&amp;text={a-work-in-progress}"></div>
-	  <div><img src="http://placehold.it/1400x450&amp;text={code-in-development}"></div>
+	  <div style="height:350px;background:#ccc;margin:auto;"><h2>found press</h2></div>
+	  <div style="height:350px;background:#ccc;margin:0 auto;"><h2>get started fast</h2></div>
+	  <div style="height:350px;background:#ccc;margin:0 auto;"><h2>avoid bloat</h2></div>
 	</div>
 </section>
 
