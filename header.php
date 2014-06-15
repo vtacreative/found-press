@@ -8,7 +8,6 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
 	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><!-- this fails W3C -->
 	<title>
 	<?php
 		// dynamic title = page title

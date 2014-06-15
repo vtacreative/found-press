@@ -5,7 +5,7 @@ get_header(); ?>
 
 
 <!-- SLICK SLIDER
- 			Something about the slider causes light horizontal scrolling on 320 portrait -->
+ 			Something about the slider causes horizontal scrolling on 320 portrait -->
 <section>
 	<div class="slider single-item">
 	  <div style="height:350px;background:#ccc;margin:auto;"><h2>found press</h2></div>
@@ -14,9 +14,8 @@ get_header(); ?>
 	</div>
 </section>
 
-<section>
-	
-<!--  Why does this output a perfectly center list while the wp_get_nav doesn't??
+
+<!--  TODO: Why does this output a perfect horizontally centered navigation list while the wp_get_nav doesn't??
 	<div class="row">
 		<div class="large-12 columns h">
 			<div class="nav table">
@@ -29,25 +28,23 @@ get_header(); ?>
 			</div>
 		</div>
 	</div>-->
-
 	
-</section>
 
 <!-- 3-UP MARKETING SECTION -->
 <section class="three-up">
 	<div class="row">
 		<div class="large-4 columns text-center">
-			<h1>Fast.</h1>
+			<h2>Fast.</h2>
 			<p>found-press helps developers with rapid deployment of responsive WordPress themes. Use it to build quick prototypes or as full-on production code.</p>
 			<a href="#" class="small button success round">Download</a>
 		</div>
 		<div class="large-4 columns text-center">
-			<h1>Flexible.</h1>
+			<h2>Flexible.</h2>
 			<p>found-press generally avoids assumptions about things like typography and color. Don't like the defaults? Roll your own styles.</p>
 			<a href="#" class="small button success round">Customize</a>
 		</div>
 		<div class="large-4 columns text-center">
-			<h1>Free.</h1>
+			<h2>Free.</h2>
 			<p>found-press is open source. You can grab the code off GitHub and are more than welcomed to submit pull requests, fix bugs or give feedback.</p>
 			<a href="https://github.com/CL75/found-press" target="blank" class="small button success round">GitHub</a>
 		</div>
@@ -68,6 +65,7 @@ get_header(); ?>
 </section>
 
 <section>
+	<h2>My Heading</h2>
 	<div class="row">
 		<div class="small-2 columns c">
 			<h6>S</h6>
@@ -96,8 +94,8 @@ get_header(); ?>
 </section>
 
 <!-- SECONDARY MARKETING -->
-<section class="secondary">
-	
+<section class="secondary dark-wall">
+	<h2>Another Sub Heading</h2>
 	<!-- ROW1 -->
 	<div class="row">
 		<div class="small-4 large-2 columns a">
