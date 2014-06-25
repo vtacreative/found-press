@@ -15,7 +15,7 @@ function fp_scripts_styles () {
 	wp_register_style('foundation', get_template_directory_uri() . '/css/foundation.5.2.3.min.css', array(), null, 'all');
 	wp_enqueue_style('foundation');
 	
-	wp_register_style('global', get_stylesheet_uri(), array(), null, 'screen');
+	wp_register_style('global', '/wp-content/themes/fp-child/style.css', array(), null, 'screen');
 	wp_enqueue_style('global');
 
 }

@@ -45,7 +45,7 @@
 	</div>
 </div> 
 
-<?php echo '<script src="' . get_theme_root_uri() .'/found-press/js/vendor/jquery.js"></script>'; ?>
+<?php echo '<script src="' . get_template_directory_uri() .'/js/vendor/jquery.js"></script>'; ?>
 
 <script>
 // 	SCROLL TO TOP
