@@ -194,6 +194,8 @@ update_option( 'permalink_structure', '/%postname%/' );
 /*	UPDATE THE DEFAULT SAMPLE PAGE TO FOUND-PRESS HOMEPAGE */
 $fp_homepage = array(
 	'ID'						=> 2,
+	'post_type'			=> 'page',
+	'post_status'		=> 'publish',
   'post_title'    => 'Home',
 	'page_template'	=> 'featurettes.php'
 );
