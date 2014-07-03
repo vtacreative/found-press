@@ -188,11 +188,11 @@ function clear_nav_menu_item_class($classes, $item, $args) {
 
 
 
+/*	ACTIVATE FP-CHILD THEME */
+switch_theme( 'fp-child' );
+
 /*	SET PERMALINKS TO POST NAME */
 update_option( 'permalink_structure', '/%postname%/' );
-
-/*	ACTIVATE FP-CHILD THEME */
-update_option( 'template', 'fp-child');
 
 /*	UPDATE THE DEFAULT SAMPLE PAGE TO FOUND-PRESS HOMEPAGE */
 $fp_homepage = array(
