@@ -189,3 +189,26 @@ function clear_nav_menu_item_class($classes, $item, $args) {
 
 
 
+/*	SET PERMALINKS TO POST NAME */
+update_option( 'permalink_structure', '/%postname%/' );
+
+/*	UPDATE THE DEFAULT SAMPLE PAGE TO FOUND-PRESS HOMEPAGE */
+$fp_homepage = array(
+	'ID'						=> 2,
+  'post_title'    => 'Home',
+	'page_template'	=> 'featurettes.php'
+);
+
+// Insert the post into the database
+wp_insert_post( $my_post );
+
+/*	MAKE HOMEPAGE DISPLAY STATIC PAGE */
+update_option( 'show_on_front', 'page' );
+
+/*	DISPLAY THE SAMPLE PAGE */
+update_option( 'page_on_front', 2);
+
+
+
+
+

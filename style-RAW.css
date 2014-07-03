@@ -12,8 +12,23 @@ Tags: responsive, fluid, mobile, mobile-friendly
 
 
 /* ==========================================================================
+   	Add full-width class to rows so columns can span full width of viewport
+		learn more: http://foundation.zurb.com/forum/posts/132-full-width-row
+   ========================================================================== */
+
+
+.full-width {
+   width: 100%;
+   margin-left: auto;
+   margin-right: auto;
+   max-width: initial;
+}
+
+
+
+/* ==========================================================================
    	Foundation Icon Fonts
-	learn more: http://zurb.com/playground/foundation-icons
+		learn more: http://zurb.com/playground/foundation-icons
    ========================================================================== */
 
 /* GLOBAL ICON STYLES */
