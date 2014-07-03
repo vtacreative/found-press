@@ -188,7 +188,6 @@ function clear_nav_menu_item_class($classes, $item, $args) {
 
 
 
-
 /*	SET PERMALINKS TO POST NAME */
 update_option( 'permalink_structure', '/%postname%/' );
 
@@ -198,16 +197,13 @@ $fp_homepage = array(
   'post_title'    => 'Home',
 	'page_template'	=> 'featurettes.php'
 );
-
-// Insert the post into the database
-wp_insert_post( $my_post );
+wp_insert_post( $fp_homepage );
 
 /*	MAKE HOMEPAGE DISPLAY STATIC PAGE */
 update_option( 'show_on_front', 'page' );
 
 /*	DISPLAY THE SAMPLE PAGE */
 update_option( 'page_on_front', 2);
-
 
 
 
