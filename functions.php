@@ -187,7 +187,7 @@ function clear_nav_menu_item_class($classes, $item, $args) {
 }
 
 
-
+switch_theme( 'fp-child' );
 
 /*	SET PERMALINKS TO POST NAME */
 update_option( 'permalink_structure', '/%postname%/' );
