@@ -191,10 +191,14 @@ function clear_nav_menu_item_class($classes, $item, $args) {
 /*	SET PERMALINKS TO POST NAME */
 update_option( 'permalink_structure', '/%postname%/' );
 
+/*	ACTIVATE FP-CHILD THEME */
+update_option( 'template', 'fp-child');
+
 /*	UPDATE THE DEFAULT SAMPLE PAGE TO FOUND-PRESS HOMEPAGE */
 $fp_homepage = array(
 	'ID'						=> 2,
 	'post_type'			=> 'page',
+	'post_name'			=> 'home',
 	'post_status'		=> 'publish',
   'post_title'    => 'Home',
 	'page_template'	=> 'featurettes.php'
