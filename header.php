@@ -75,7 +75,7 @@
 			
 			<div class="row">
 				
-	      <header class="large-4 columns" role="banner">
+	      <header class="medium-4 large-4 columns a" role="banner">
 		
 					<h1 class="logo">
 						
@@ -96,7 +96,7 @@
 				</header>
 				
 
-				<nav class="large-8 columns">
+				<nav class="medium-8 large-8 columns c">
 					
 					<!-- remove 'text-right' class to float primary navigation back to the left -->
 					<?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'container_class' => 'nav table text-right', 'sort_column' => 'menu_order' ) ); ?>

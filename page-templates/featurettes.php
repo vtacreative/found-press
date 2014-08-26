@@ -27,11 +27,11 @@ get_header(); ?>
 
 
 <!-- 3-UP MARKETING SECTION -->
-<section class="three-up">
+<section class="three-up z">
 	
 	<div class="row">
 		
-		<div class="large-4 columns text-center f">
+		<div class="medium-4 large-4 columns text-center f">
 			
 			<h2>Fast.</h2>
 			
@@ -41,7 +41,7 @@ get_header(); ?>
 			
 		</div>
 		
-		<div class="large-4 columns text-center g">
+		<div class="medium-4 large-4 columns text-center g">
 			
 			<h2>Flexible.</h2>
 			
@@ -51,11 +51,11 @@ get_header(); ?>
 			
 		</div>
 		
-		<div class="large-4 columns text-center h">
+		<div class="medium-4 large-4 columns text-center o">
 			
 			<h2>Free.</h2>
 			
-			<p>found-press is open source. You can grab the code off GitHub and are more than welcomed to submit pull requests, fix bugs or give feedback.</p>
+			<p>found-press is open source. You can grab the code off GitHub and are welcomed to submit pull requests, fix bugs or give feedback.</p>
 			
 			<a href="https://github.com/CL75/found-press" target="blank" class="small button success round">GitHub</a>
 			
@@ -73,7 +73,7 @@ get_header(); ?>
 
 
 <!-- VARIOUS MOBILE LAYOUTS -->
-<section>
+<section class="c">
 	
 	<h2>Various Mobile Layouts</h2>
 	
@@ -129,7 +129,7 @@ get_header(); ?>
 
 
 <!-- SECONDARY MARKETING -->
-<section class="secondary">
+<section class="secondary d">
 	
 	<h2>Another Sub Heading</h2>
 	
@@ -166,25 +166,25 @@ get_header(); ?>
 	<!-- ROW2 -->
 	<div class="row">
 		
-		<div class="large-2 columns a">
+		<div class="medium-2 large-2 columns a">
 			
 			<a href=""><i class="general foundicon-website"></i></a>
 			
 		</div>
 		
-		<div class="large-4 columns c">
+		<div class="medium-4 large-4 columns c">
 			
 			<p><span class="secondary-head">Responsive Design</span><br>Responsive templates keep your project future-proof <a href="">&rarr;</a></p>
 			
 		</div>
 		
-		<div class="large-2 columns n">
+		<div class="medium-2 large-2 columns n">
 			
 			<a href=""><i class="general foundicon-tools"></i></a>
 			
 		</div>
 		
-		<div class="large-4 columns x">
+		<div class="medium-4 large-4 columns x">
 			
 			<p><span class="secondary-head">Options Galore</span><br>Snippets, background patterns, icons, custom post types and more <a href="">&rarr;</a></p>
 			
@@ -196,25 +196,25 @@ get_header(); ?>
 	<!-- ROW3 -->
 	<div class="row">
 		
-		<div class="large-2 columns l">
+		<div class="medium-2 large-2 columns l">
 			
 			<a href=""><i class="general foundicon-idea"></i></a>
 			
 		</div>
 		
-		<div class="large-4 columns e">
+		<div class="medium-4 large-4 columns e">
 			
 			<p><span class="secondary-head">Mobile First</span><br>Build for small devices first, then add complexity for larger devices <a href="">&rarr;</a></p>
 			
 		</div>
 		
-		<div class="large-2 columns p">
+		<div class="medium-2 large-2 columns p">
 			
 			<a href=""><i class="general foundicon-inbox"></i></a>
 			
 		</div>
 		
-		<div class="large-4 columns z">
+		<div class="medium-4 large-4 columns z">
 			
 			<p><span class="secondary-head">Easy to Use</span><br>Just unpack the contents into your themes folder <a href="">&rarr;</a></p>
 			

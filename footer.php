@@ -1,12 +1,12 @@
 <?php
 /* FOOTER */
 ?>
-	<footer id="footer-container">
+	<footer id="footer-container" class="n">
 		
 		<div class="row full-width k">
 			
 			<!-- COL1 -->
-			<div class="large-3 columns">
+			<div class="medium-3 large-3 columns d">
 				
 				<p>found-press is useful for the rapid deployment of responsive WordPress themes. <br><a href="">Learn More &rarr;</a></p>
 				
@@ -14,7 +14,9 @@
 			
 			
 			<!-- COL2 -->
-			<div class="large-2 columns">
+			<div class="medium-3 large-3 columns w">
+				
+				<h4>Footer Menu</h4>
 				
 				<?php wp_nav_menu(array('theme_location' => 'footer-menu', 'container_class' => 'nav', 'sort_column' => 'menu_order')); ?>
 				
@@ -22,39 +24,17 @@
 			
 			
 			<!-- COL3 -->
-			<div class="large-2 columns">
+			<div class="medium-3 large-3 columns k">
 				
-				<ul class="no-bullet">
-					
-					<li>Client</li>
-					
-					<li><a href="">About</a></li>
-					
-					<li><a href="">Map</a></li>
-					
-					<li><a href="">Blog</a></li>
-					
-					<li><a href="">Privacy</a></li>
-					
-					<li><a href="">Terms</a></li>
-					
-				</ul>
+				<h4>Fancy Badges Go Here.</h4>
 				
 			</div>
 			
 			
 			<!-- COL4 -->
-			<div class="large-2 columns">
+			<div class="medium-3 large-3 columns b">
 				
-				<p>Fancy Badges Go Here</p>
-				
-			</div>
-			
-			
-			<!-- COL5 -->
-			<div class="large-3 columns">
-				
-				<h4>"Let me tell you about how fantastically awesome this business is."</h4>
+				<h4>"Let me tell you about how fantastically awesome this codebase is."</h4>
 				
 				<p>&mdash;<i>Happy Customer</i></p>
 				
@@ -72,11 +52,13 @@
 	
 	<div class="medium-6 large-6 columns footer-left a">
 		
-		<p class="copyright">By <a href="https://github.com/CL75">CL75</a>. A work in progress...</p>
+		<p>By <a href="https://github.com/CL75">CL75</a>. A work in progress...</p>
 		
 	</div>
 	
 	<div class="medium-6 large-6 columns footer-right c">
+		
+		<p>
 		
 			<a href="https://www.twitter.com/"><i class="social foundicon-twitter"></i></a>
 			
@@ -87,6 +69,8 @@
 			<a class="scroll" href="#top"><i class="enclosed foundicon-up-arrow"></i></a>
 			
 			<a href="/"><i class="general foundicon-home"></i></a>
+			
+		</p>
 			
 	</div>
 	
