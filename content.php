@@ -45,7 +45,7 @@
 
 					<?php else: ?>
 
-						<?php the_content(__('<span class="read-more-arrow r10">&rarr;</span>')); ?>
+						<?php the_content(__('<span class="read-more-arrow r10">Read More &rarr;</span>')); ?>
 
 						<?php wp_link_pages( array('before' => '<div>' . __('Pages:'), 'after' => '</div>')); ?>
 
