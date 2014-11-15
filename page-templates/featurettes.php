@@ -20,6 +20,25 @@ get_header(); ?>
 	
 </section>-->
 
+
+
+
+<!--
+<section class="parallax" data-type="background" data-speed="10">
+	
+	<div class="row">
+		
+		<div class="large-12 columns">
+			
+			<h2>Content for Parallax</h2>
+			
+		</div>
+		
+	</div>
+	
+<section>-->
+
+
 	
 
 

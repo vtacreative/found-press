@@ -571,6 +571,26 @@ url(data:application/x-font-woff;charset=utf-8;base64,d09GRgABAAAAACmUAA0AAAAAQf
 
 
 
+
+/* ==========================================================================
+   Parallax
+   ========================================================================== */
+
+.parallax { 
+	margin: 0 auto; 
+  width:100%;
+  position: relative; 
+}
+
+.parallax {
+	background: url(/wp-content/themes/fp-child/images/image-to-use.jpg) 50% 0 no-repeat fixed;
+	height:450px;
+}
+
+
+
+
+
 	
 
 /* ==========================================================================
