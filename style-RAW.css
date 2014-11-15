@@ -553,6 +553,24 @@ url(data:application/x-font-woff;charset=utf-8;base64,d09GRgABAAAAACmUAA0AAAAAQf
   content: "\f019"; }
 
 
+
+
+
+
+/* ==========================================================================
+   	various effects
+   ========================================================================== */
+
+/* This style requires a square image to work properly */
+.img-circle {
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%; }
+
+
+
+
+
 	
 
 /* ==========================================================================
@@ -709,9 +727,6 @@ url(data:application/x-font-woff;charset=utf-8;base64,d09GRgABAAAAACmUAA0AAAAAQf
 	-ms-transform:skew(8deg) rotate(3deg);
 	-o-transform:skew(8deg) rotate(3deg);
 	transform:skew(8deg) rotate(3deg); }
-
-
-body { background:#eee; }
 
 
 /* ==========================================================================
