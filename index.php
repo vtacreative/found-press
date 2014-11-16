@@ -15,6 +15,12 @@ get_header(); ?>
 						
 					<?php endwhile; ?>
 					
+					<div id="page-navigation">
+						
+						<?php posts_nav_link( '&nbsp;|&nbsp;' , '&larr; Newer Posts' , 'Older Posts &rarr;' ); ?>
+						
+					</div>
+					
 				<?php endif; ?><!--/have_posts()-->
 				
 			</div>
