@@ -16,6 +16,8 @@
 			<div class="medium-4 columns">
 
 				<?php the_post_thumbnail('post-thumbnail', array( 'class'	=> "img-circle attachment-post-thumbnail")); ?>
+				
+				<br><br><br><br>
 
 			</div><!--/medium-4 columns-->
 
@@ -44,8 +46,8 @@
 						<?php the_excerpt(); ?>
 
 					<?php else: ?>
-
-						<?php the_content(__('<span class="read-more-arrow r10">Read More &rarr;</span>')); ?>
+						
+						<?php the_content('Read More &rarr;'); ?>
 
 						<?php wp_link_pages( array('before' => '<div>' . __('Pages:'), 'after' => '</div>')); ?>
 
@@ -54,6 +56,8 @@
 				</div><!--/.content-body-->
 
 			</div><!--/.medium-8 columns-->
+			
+			<hr style="padding-bottom:30px;">
 	
 		</div><!--/.row-->
 
