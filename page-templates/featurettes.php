@@ -148,14 +148,18 @@ get_header(); ?>
 
 
 <!-- SECONDARY MARKETING -->
-<section class="secondary d">
+<section class="secondary-marketing d">
 	
-	<h2>Another Sub Heading</h2>
+	<div class="section-header">
+	
+		<h2>Another Sub Heading</h2>
+	
+	</div>
 	
 	<!-- ROW1 -->
-	<div class="row">
+	<div class="row secondary">
 		
-		<div class="medium-2 large-2 columns y">
+		<div class="medium-2 large-2 columns text-center y">
 			
 			<a href="https://github.com/CL75/found-press" target="blank"><i class="social foundicon-github"></i></a>
 			
@@ -167,7 +171,7 @@ get_header(); ?>
 			
 		</div>
 
-		<div class="medium-2 large-2 columns s">
+		<div class="medium-2 large-2 columns text-center s">
 			
 			<a href=""><i class="accessibility foundicon-w3c"></i></a>
 			
@@ -182,10 +186,12 @@ get_header(); ?>
 	</div><!--/.row-->
 	
 	
+	
+	
 	<!-- ROW2 -->
-	<div class="row">
+	<div class="row secondary">
 		
-		<div class="medium-2 large-2 columns a">
+		<div class="medium-2 large-2 columns text-center a">
 			
 			<a href=""><i class="general foundicon-website"></i></a>
 			
@@ -197,7 +203,7 @@ get_header(); ?>
 			
 		</div>
 		
-		<div class="medium-2 large-2 columns n">
+		<div class="medium-2 large-2 columns text-center n">
 			
 			<a href=""><i class="general foundicon-tools"></i></a>
 			
@@ -211,11 +217,13 @@ get_header(); ?>
 		
 	</div><!--/.row-->
 	
+	
+	
 
 	<!-- ROW3 -->
-	<div class="row">
+	<div class="row secondary">
 		
-		<div class="medium-2 large-2 columns l">
+		<div class="medium-2 large-2 columns text-center l">
 			
 			<a href=""><i class="general foundicon-idea"></i></a>
 			
@@ -227,7 +235,7 @@ get_header(); ?>
 			
 		</div>
 		
-		<div class="medium-2 large-2 columns p">
+		<div class="medium-2 large-2 columns text-center p">
 			
 			<a href=""><i class="general foundicon-inbox"></i></a>
 			
