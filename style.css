@@ -809,6 +809,24 @@ url(data:application/x-font-woff;charset=utf-8;base64,d09GRgABAAAAACmUAA0AAAAAQf
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ==========================================================================
    Custom found-press styles begin here
    ========================================================================== */
@@ -864,8 +882,8 @@ a:hover {
 
 /* /////////////////  3-UP MARKETING */
 	
-.three-up {
-	padding:0px 0 65px 0; 
+section.three-up {
+	padding:75px 0; 
 }
 
 
@@ -878,13 +896,13 @@ a:hover {
 /* /////////////////  SECONDARY MARKETING */
 
 /* main secondary marketing container */
-section.secondary {
-	padding:100px 0 35px 0; 
+section.secondary-marketing {
+	padding-bottom:75px; 
 }
 
 /* secondary marketing section header */
 div.section-header {
-	margin-bottom:45px;
+	padding:75px 0 50px 0;
 	text-align:center;
 }
 	
@@ -907,6 +925,22 @@ div.section-header {
 /* cell foundicons */
 .row.secondary i {
 	font-size:80px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* /////////////////  MOBILE GRID */
+	
+.mobile-grid {
+	padding-bottom:75px; 
 }
 
 

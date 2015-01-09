@@ -52,7 +52,7 @@
 	
 	<div class="medium-6 large-6 columns footer-left a">
 		
-		<p>By <a href="https://github.com/CL75">CL75</a>. A work in progress...</p>
+		<p><img src="/img/fp-logo-small.jpg"> By <a href="https://github.com/CL75">CL75</a>. A work in progress...</p>
 		
 	</div>
 	

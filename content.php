@@ -20,6 +20,8 @@
 				<br><br><br><br>
 
 			</div><!--/medium-4 columns-->
+			
+			
 
 			<div class="medium-8 columns">
 
@@ -38,6 +40,8 @@
 					<?php endif; ?>
 
 				</header>
+				
+				
 		
 				<div class="content-body">
 			

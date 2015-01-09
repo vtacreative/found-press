@@ -39,6 +39,10 @@ get_header(); ?>
 <section>-->
 
 
+
+
+
+
 	
 
 
@@ -92,13 +96,17 @@ get_header(); ?>
 
 
 <!-- VARIOUS MOBILE LAYOUTS -->
-<section class="c">
-	
-	<h2>Various Mobile Layouts</h2>
+<section class="mobile-grid c">
+
+	<div class="section-header">
+
+		<h2>Handy Mobile Grid</h2>
+
+	</div>
 	
 	<div class="row">
 		
-		<div class="small-2 columns c">
+		<div class="small-2 columns f">
 			
 			<h6>S</h6>
 			
@@ -152,7 +160,7 @@ get_header(); ?>
 	
 	<div class="section-header">
 	
-		<h2>Another Sub Heading</h2>
+		<h2>Secondary Marketing Section</h2>
 	
 	</div>
 	
