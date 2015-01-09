@@ -25,6 +25,16 @@ add_action('wp_enqueue_scripts', 'fp_scripts_styles', 5); //TODO: possibly alter
 
 
 
+
+
+function register_my_menu() {
+  register_nav_menu( 'main menu', 'Main Menu' );
+}
+add_action( 'after_setup_theme', 'register_my_menu' );
+
+
+
+
 /* RESTORE LINK MANAGER THAT EXISTED IN WP < 3.5 */
 add_filter( 'pre_option_link_manager_enabled', '__return_true' );
 
