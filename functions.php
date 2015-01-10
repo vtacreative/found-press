@@ -58,6 +58,19 @@ define ('DISALLOW_FILE_EDIT', true);
 
 
 
+
+/*	SET SOME CONSTANTS FOR HANDY REFERENCE */
+define('COMPANY_NAME', 						'Company X'						);
+define('STREET_ADDRESS',			'123 West Fourth St.'			);
+define('CITY',								'Some City'								);
+define('STATE',								'Some State'							);
+define('URL',				'http://www.yourcompany.com'				);
+
+
+
+
+
+
 /*  TRIM OUTPUT OF wp_head */
 remove_action('wp_head', 'rsd_link');
 remove_action('wp_head', 'wlwmanifest_link');
