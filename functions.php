@@ -35,6 +35,7 @@ define('STREET_ADDRESS',			'123 West Fourth St.'			);
 define('CITY',								'Some City'								);
 define('STATE',								'Some State'							);
 define('URL',				'http://www.yourcompany.com'				);
+define('FLAG_DIR',	get_template_directory_uri() . '/img/country-flags-64/'	);
 
 
 
