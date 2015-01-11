@@ -29,7 +29,7 @@ add_action('wp_enqueue_scripts', 'fp_scripts_styles', 5); //TODO: possibly alter
 
 
 /*	SET SOME CONSTANTS FOR HANDY REFERENCE */
-define('COMPANY_NAME', 						'Company X'						);
+define('COMPANY_NAME', 						'Found-Press'						);
 define('STREET_ADDRESS',			'123 West Fourth St.'			);
 define('CITY',								'Some City'								);
 define('STATE',								'Some State'							);
@@ -75,6 +75,16 @@ function romanNumerals($num)
     /*** return the res ***/
     return $res;
     }
+
+
+
+
+
+/* DELETE HELLO DOLLY PLUGIN */
+require_once(ABSPATH . 'wp-admin/includes/plugin.php');
+require_once(ABSPATH . 'wp-admin/includes/file.php');
+if (file_exists(WP_PLUGIN_DIR . '/hello.php'))
+  delete_plugins(array('hello.php'));
 
 
 
