@@ -79,6 +79,39 @@ function romanNumerals($num)
 
 
 
+
+/* CUSTOMIZE LOGIN ELEMENTS */
+function fp_customize_login() { ?>
+    <style type="text/css">
+        .login #login h1 a {
+            background-image: url(<?php echo get_template_directory_uri(); ?>/img/fp-logo-medium.jpg);
+        }
+				body {
+					background:white;
+				}
+				form#loginform {
+					box-shadow:none;
+				}
+				p.fp-welcome {
+					font-weight:bold;
+				}
+				#login {
+					text-align:center;
+				}
+        .login #nav a, .login #backtoblog a {
+            color: #000000 !important;
+        }
+        .login #nav a:hover, .login #backtoblog a:hover {
+            color: red !important;
+        }
+    </style>
+<?php }
+add_action( 'login_enqueue_scripts', 'fp_customize_login' );
+
+
+
+
+
 /* REPLACE LOGIN WORDPRESS URL WITH SITE URL */
 function fp_login_logo_url() {
 	
@@ -87,12 +120,24 @@ function fp_login_logo_url() {
 add_filter( 'login_headerurl', 'fp_login_logo_url' );
 
 
-// CHANGE LOGIN IMG TITLE */
+
+
+/* CHANGE LOGIN IMG TITLE */
 function fp_login_img_title() {
 	
     return 'The Official Website for ' . COMPANY_NAME;
 }
 add_filter( 'login_headertitle', 'fp_login_img_title' );
+
+
+
+
+/* SET LOGIN WELCOME MESSAGE */
+function fp_login_message() {
+	
+    return '<p class="fp-welcome">The Official Website for ' . COMPANY_NAME . '</p>';
+}
+add_filter( 'login_message', 'fp_login_message' );
 
 
 
