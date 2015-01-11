@@ -28,10 +28,17 @@ add_action('wp_enqueue_scripts', 'fp_scripts_styles', 5); //TODO: possibly alter
 
 
 
+/*	SET SOME CONSTANTS FOR HANDY REFERENCE */
+define('COMPANY_NAME', 						'Company X'						);
+define('STREET_ADDRESS',			'123 West Fourth St.'			);
+define('CITY',								'Some City'								);
+define('STATE',								'Some State'							);
+define('URL',				'http://www.yourcompany.com'				);
+
+
 
 
 /* FUNCTION TO CREATE ROMAN NUMERALS FROM INTEGERS */
-// create Roman numerals from integers
 function romanNumerals($num) 
 {
     $n = intval($num);
@@ -72,6 +79,24 @@ function romanNumerals($num)
 
 
 
+/* REPLACE LOGIN WORDPRESS URL WITH SITE URL */
+function fp_login_logo_url() {
+	
+    return home_url();
+}
+add_filter( 'login_headerurl', 'fp_login_logo_url' );
+
+
+// CHANGE LOGIN IMG TITLE */
+function fp_login_img_title() {
+	
+    return 'The Official Website for ' . COMPANY_NAME;
+}
+add_filter( 'login_headertitle', 'fp_login_img_title' );
+
+
+
+
 /* RESTORE LINK MANAGER THAT EXISTED IN WP < 3.5 */
 add_filter( 'pre_option_link_manager_enabled', '__return_true' );
 
@@ -84,7 +109,6 @@ function failed_login () {
     return 'Your username and/or password is incorrect.';
 
 }
-
 add_filter ('login_errors', 'failed_login');
 
 
@@ -92,18 +116,6 @@ add_filter ('login_errors', 'failed_login');
 
 /*  PREVENT UNAUTHORIZED EDITOR ACCESS */
 define ('DISALLOW_FILE_EDIT', true);
-
-
-
-
-/*	SET SOME CONSTANTS FOR HANDY REFERENCE */
-define('COMPANY_NAME', 						'Company X'						);
-define('STREET_ADDRESS',			'123 West Fourth St.'			);
-define('CITY',								'Some City'								);
-define('STATE',								'Some State'							);
-define('URL',				'http://www.yourcompany.com'				);
-
-
 
 
 
@@ -125,7 +137,6 @@ function fp_setup() {
 	add_theme_support('custom-background', array('default-color' => 'ffffff'));
 	
 }
-
 add_action('after_setup_theme', 'fp_setup');
 
 
@@ -147,7 +158,6 @@ function fp_menus() {
 		) 
 	);
 }
-
 add_action('init', 'fp_menus');
 
 
