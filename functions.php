@@ -28,6 +28,7 @@ add_action('wp_enqueue_scripts', 'fp_scripts_styles', 5); //TODO: possibly alter
 
 
 
+
 /*	SET SOME CONSTANTS FOR HANDY REFERENCE */
 define('COMPANY_NAME', 						'Found-Press'						);
 define('STREET_ADDRESS',			'123 West Fourth St.'			);
@@ -38,43 +39,43 @@ define('URL',				'http://www.yourcompany.com'				);
 
 
 
+
 /* FUNCTION TO CREATE ROMAN NUMERALS FROM INTEGERS */
 function romanNumerals($num) 
 {
-    $n = intval($num);
-    $res = '';
- 
-    /*** roman_numerals array  ***/
-    $roman_numerals = array(
-                'M'  => 1000,
-                'CM' => 900,
-                'D'  => 500,
-                'CD' => 400,
-                'C'  => 100,
-                'XC' => 90,
-                'L'  => 50,
-                'XL' => 40,
-                'X'  => 10,
-                'IX' => 9,
-                'V'  => 5,
-                'IV' => 4,
-                'I'  => 1);
- 
-    foreach ($roman_numerals as $roman => $number) 
-    {
-        /*** divide to get  matches ***/
-        $matches = intval($n / $number);
- 
-        /*** assign the roman char * $matches ***/
-        $res .= str_repeat($roman, $matches);
- 
-        /*** substract from the number ***/
-        $n = $n % $number;
-    }
- 
-    /*** return the res ***/
-    return $res;
-    }
+	$n = intval($num);
+	$res = '';
+
+	/*** roman_numerals array  ***/
+	$roman_numerals = array(
+	            'M'  => 1000,
+	            'CM' => 900,
+	            'D'  => 500,
+	            'CD' => 400,
+	            'C'  => 100,
+	            'XC' => 90,
+	            'L'  => 50,
+	            'XL' => 40,
+	            'X'  => 10,
+	            'IX' => 9,
+	            'V'  => 5,
+	            'IV' => 4,
+	            'I'  => 1);
+
+	foreach ($roman_numerals as $roman => $number) 
+	{
+	  /*** divide to get  matches ***/
+	  $matches = intval($n / $number);
+
+	  /*** assign the roman char * $matches ***/
+	  $res .= str_repeat($roman, $matches);
+
+	  /*** substract from the number ***/
+	  $n = $n % $number;
+	}
+
+	return $res;
+	}
 
 
 
@@ -132,12 +133,14 @@ add_filter( 'login_headerurl', 'fp_login_logo_url' );
 
 
 
+
 /* CHANGE LOGIN IMG TITLE */
 function fp_login_img_title() {
 	
     return 'The Official Website for ' . COMPANY_NAME;
 }
 add_filter( 'login_headertitle', 'fp_login_img_title' );
+
 
 
 
@@ -152,8 +155,10 @@ add_filter( 'login_message', 'fp_login_message' );
 
 
 
+
 /* RESTORE LINK MANAGER THAT EXISTED IN WP < 3.5 */
 add_filter( 'pre_option_link_manager_enabled', '__return_true' );
+
 
 
 
@@ -169,8 +174,28 @@ add_filter ('login_errors', 'failed_login');
 
 
 
+
 /*  PREVENT UNAUTHORIZED EDITOR ACCESS */
 define ('DISALLOW_FILE_EDIT', true);
+
+
+
+
+
+/* REMOVE DEFAULT DASHBOARD WIDGETS */
+function fp_remove_default_dashboard_widgets() {    
+	remove_meta_box( 'dashboard_incoming_links', 'dashboard', 'normal' );
+  remove_meta_box( 'dashboard_plugins', 'dashboard', 'normal' );
+  remove_meta_box( 'dashboard_primary', 'dashboard', 'side' );
+  remove_meta_box( 'dashboard_secondary', 'dashboard', 'normal' );
+  remove_meta_box( 'dashboard_quick_press', 'dashboard', 'side' );
+  remove_meta_box( 'dashboard_recent_drafts', 'dashboard', 'side' );
+  remove_meta_box( 'dashboard_recent_comments', 'dashboard', 'normal' );
+  remove_meta_box( 'dashboard_right_now', 'dashboard', 'normal' );
+  /*remove_meta_box( 'dashboard_activity', 'dashboard', 'normal');*/
+}
+add_action( 'wp_dashboard_setup', 'fp_remove_default_dashboard_widgets' );
+
 
 
 
@@ -186,6 +211,7 @@ remove_action('wp_head', 'adjacent_posts_rel_link');
 
 
 
+
 /*	SUPPORT NATIVE WP CUSTOM BACKGROUND COLOR  */
 function fp_setup() {
 	
@@ -197,8 +223,10 @@ add_action('after_setup_theme', 'fp_setup');
 
 
 
+
 /*  SUPPORT CUSTOM HEADER IMAGE */
 require(get_template_directory() . '/inc/custom-header.php');
+
 
 
 
@@ -218,8 +246,10 @@ add_action('init', 'fp_menus');
 
 
 
+
 /*  SUPPORT FEATURED IMAGES */
 add_theme_support('post-thumbnails');
+
 
 
 
@@ -236,8 +266,10 @@ function be_excerpt_length( $length ) {
 
 
 
+
 /*  HIDE ADMIN PANEL FROM FRONT END */
 add_filter('show_admin_bar', '__return_false');
+
 
 
 
@@ -283,6 +315,7 @@ function fp_meta() {
 
 
 
+
 /*	REGISTER WIDGETS  */
 function fp_widgets_init() {
 	register_sidebar( array(
@@ -300,6 +333,7 @@ add_action('widgets_init', 'fp_widgets_init');
 
 
 
+
 /*  REMOVE CLASS FROM NAV UL LI */
 add_filter('nav_menu_item_id', 'clear_nav_menu_item_id', 10, 3);
 function clear_nav_menu_item_id($id, $item, $args) {
@@ -310,4 +344,12 @@ add_filter('nav_menu_css_class', 'clear_nav_menu_item_class', 10, 3);
 function clear_nav_menu_item_class($classes, $item, $args) {
     return array();
 }
+
+
+
+
+
+
+
+
 
