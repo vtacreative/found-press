@@ -15,7 +15,12 @@ function fp_scripts_styles () {
 	wp_register_style('foundation', get_template_directory_uri() . '/css/foundation.5.2.3.min.css', array(), null, 'all');
 	wp_enqueue_style('foundation');
 	
-	wp_register_style('global', get_stylesheet_directory_uri() . '/style.css', array(), null, 'screen');
+	/* load our global stylesheet conditionally */
+	if (!is_child_theme) {
+		wp_register_style('global', get_stylesheet_directory_uri() . '/style.css', array(), null, 'screen');
+	} else {
+		wp_register_style('global', get_template_directory_uri() . '/style.css', array(), null, 'screen');
+	}
 	wp_enqueue_style('global');
 
 }
