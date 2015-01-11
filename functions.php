@@ -14,7 +14,7 @@ function fp_scripts_styles () {
 	/*	css	 */
 	wp_register_style('foundation', get_template_directory_uri() . '/css/foundation.5.2.3.min.css', array(), null, 'all');
 	wp_enqueue_style('foundation');
-	
+
 	/* load our global stylesheet conditionally */
 	if (!is_child_theme) {
 		wp_register_style('global', get_stylesheet_directory_uri() . '/style.css', array(), null, 'screen');
@@ -22,9 +22,7 @@ function fp_scripts_styles () {
 		wp_register_style('global', get_template_directory_uri() . '/style.css', array(), null, 'screen');
 	}
 	wp_enqueue_style('global');
-
 }
-
 add_action('wp_enqueue_scripts', 'fp_scripts_styles', 5); //TODO: possibly alter or delete the $priority parameter
 
 
@@ -32,10 +30,44 @@ add_action('wp_enqueue_scripts', 'fp_scripts_styles', 5); //TODO: possibly alter
 
 
 
-function register_my_menu() {
-  register_nav_menu( 'main menu', 'Main Menu' );
-}
-add_action( 'after_setup_theme', 'register_my_menu' );
+/* FUNCTION TO CREATE ROMAN NUMERALS FROM INTEGERS */
+// create Roman numerals from integers
+function romanNumerals($num) 
+{
+    $n = intval($num);
+    $res = '';
+ 
+    /*** roman_numerals array  ***/
+    $roman_numerals = array(
+                'M'  => 1000,
+                'CM' => 900,
+                'D'  => 500,
+                'CD' => 400,
+                'C'  => 100,
+                'XC' => 90,
+                'L'  => 50,
+                'XL' => 40,
+                'X'  => 10,
+                'IX' => 9,
+                'V'  => 5,
+                'IV' => 4,
+                'I'  => 1);
+ 
+    foreach ($roman_numerals as $roman => $number) 
+    {
+        /*** divide to get  matches ***/
+        $matches = intval($n / $number);
+ 
+        /*** assign the roman char * $matches ***/
+        $res .= str_repeat($roman, $matches);
+ 
+        /*** substract from the number ***/
+        $n = $n % $number;
+    }
+ 
+    /*** return the res ***/
+    return $res;
+    }
 
 
 
