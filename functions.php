@@ -16,7 +16,7 @@ function fp_scripts_styles () {
 	wp_enqueue_style('foundation');
 
 	/* load our global stylesheet conditionally */
-	if (!is_child_theme) {
+	if (is_child_theme) {
 		wp_register_style('global', get_stylesheet_directory_uri() . '/style.css', array(), null, 'screen');
 	} else {
 		wp_register_style('global', get_template_directory_uri() . '/style.css', array(), null, 'screen');
