@@ -10,26 +10,7 @@
 	
 	<meta charset="utf-8">
 	
-	<title>
-		
-	<?php
-		// dynamic title = page title
-		// TODO: extract into a function or include file
-		global $page, $paged; 
-		wp_title('|', true, 'right');
-		bloginfo('name');
-
-		// blog description on home or front
-		$site_desc = get_bloginfo('description', 'display');
-		if($site_desc && (is_home() || is_front_page()))
-		echo " | $site_desc";
-
-		// page number
-		if($paged >= 2 || $page >= 2)
-		echo ' | ' . sprintf(__('Page %s'), max($paged, $page));
-	?>
-	
-	</title>
+	<title>Your Title Here</title>
 	
 	<meta name="description" content="Your company description">
 	
