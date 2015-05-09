@@ -984,10 +984,6 @@ div.section-header {
 
 /* ///////////////// HEADER AND NAVIGATION */
 
-.header-container {
-	background:black; 
-}
-
 h1.logo {
 	padding:4px 0;
 	margin:0; 
@@ -998,18 +994,11 @@ h1.logo {
 }
 	
 nav ul li {
-	font-size:.8em;
 	display:inline-block;
-	text-transform:uppercase;
 }
 
 nav ul {
 	margin:0 auto 10px auto;
-}
-	
-/* center h1 content */
-header[role='banner'] {
-	text-align:center;
 }
 	
 	
