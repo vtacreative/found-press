@@ -3,7 +3,7 @@
 ?>
 	<footer id="footer-container">
 		
-		<div class="row k">
+		<div class="row">
 			
 			<!-- COL1 -->
 			<div class="medium-3 large-3 columns">

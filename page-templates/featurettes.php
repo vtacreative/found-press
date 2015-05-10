@@ -50,11 +50,11 @@ get_header(); ?>
 
 
 <!-- 3-UP MARKETING SECTION -->
-<section class="three-up z">
+<section class="three-up">
 	
 	<div class="row">
 		
-		<div class="medium-4 large-4 columns text-center f">
+		<div class="medium-4 large-4 columns text-center">
 			
 			<h2>Fast.</h2>
 			
@@ -64,7 +64,7 @@ get_header(); ?>
 			
 		</div>
 		
-		<div class="medium-4 large-4 columns text-center g">
+		<div class="medium-4 large-4 columns text-center">
 			
 			<h2>Flexible.</h2>
 			
@@ -74,7 +74,7 @@ get_header(); ?>
 			
 		</div>
 		
-		<div class="medium-4 large-4 columns text-center o">
+		<div class="medium-4 large-4 columns text-center">
 			
 			<h2>Free.</h2>
 			
@@ -96,7 +96,7 @@ get_header(); ?>
 
 
 <!-- VARIOUS MOBILE LAYOUTS -->
-<section class="mobile-grid c">
+<section class="mobile-grid">
 
 	<div class="section-header">
 
@@ -106,37 +106,37 @@ get_header(); ?>
 	
 	<div class="row">
 		
-		<div class="small-2 columns f">
+		<div class="small-2 columns c">
 			
 			<h6>S</h6>
 			
 		</div>
 		
-		<div class="small-10 columns d">
+		<div class="small-10 columns h">
 			
 			<h6>Some Heading</h6>
 			
 		</div>
 	
-		<div class="small-4 columns b">
+		<div class="small-4 columns f">
 			
 			<h6>S</h6>
 			
 		</div>
 		
-		<div class="small-8 columns a">
+		<div class="small-8 columns t">
 			
 			<h6>Some Heading</h6>
 			
 		</div>
 	
-		<div class="small-6 columns r">
+		<div class="small-6 columns l">
 			
 			<h6>S</h6>
 			
 		</div>
 		
-		<div class="small-6 columns v">
+		<div class="small-6 columns g">
 			
 			<h6>Some Heading</h6>
 			
@@ -156,7 +156,7 @@ get_header(); ?>
 
 
 <!-- SECONDARY MARKETING -->
-<section class="secondary-marketing d">
+<section class="secondary-marketing">
 	
 	<div class="section-header">
 	
@@ -167,25 +167,25 @@ get_header(); ?>
 	<!-- ROW1 -->
 	<div class="row secondary">
 		
-		<div class="medium-2 large-2 columns text-center y">
+		<div class="medium-2 large-2 columns text-center">
 			
 			<a href="https://github.com/CL75/found-press" target="blank"><i class="social foundicon-github"></i></a>
 			
 		</div>
 		
-		<div class="medium-4 large-4 columns u">
+		<div class="medium-4 large-4 columns">
 			
 			<p><span class="secondary-head">Rapid Deployment</span><br>Fork the code off Github and get your project up and running quickly <a href="https://github.com/CL75/found-press" target="blank">&rarr;</a></p>
 			
 		</div>
 
-		<div class="medium-2 large-2 columns text-center s">
+		<div class="medium-2 large-2 columns text-center">
 			
 			<a href=""><i class="accessibility foundicon-w3c"></i></a>
 			
 		</div>
 		
-		<div class="medium-4 large-4 columns r">
+		<div class="medium-4 large-4 columns">
 			
 			<p><span class="secondary-head">Tested Code</span><br>Thousands of hours of tested code gives your project instant maturity <a href="">&rarr;</a></p>
 			
@@ -199,25 +199,25 @@ get_header(); ?>
 	<!-- ROW2 -->
 	<div class="row secondary">
 		
-		<div class="medium-2 large-2 columns text-center a">
+		<div class="medium-2 large-2 columns text-center">
 			
 			<a href=""><i class="general foundicon-website"></i></a>
 			
 		</div>
 		
-		<div class="medium-4 large-4 columns c">
+		<div class="medium-4 large-4 columns">
 			
 			<p><span class="secondary-head">Responsive Design</span><br>Responsive templates keep your project future-proof <a href="">&rarr;</a></p>
 			
 		</div>
 		
-		<div class="medium-2 large-2 columns text-center n">
+		<div class="medium-2 large-2 columns text-center">
 			
 			<a href=""><i class="general foundicon-tools"></i></a>
 			
 		</div>
 		
-		<div class="medium-4 large-4 columns x">
+		<div class="medium-4 large-4 columns">
 			
 			<p><span class="secondary-head">Options Galore</span><br>Snippets, background patterns, icons, custom post types and more <a href="">&rarr;</a></p>
 			
@@ -231,25 +231,25 @@ get_header(); ?>
 	<!-- ROW3 -->
 	<div class="row secondary">
 		
-		<div class="medium-2 large-2 columns text-center l">
+		<div class="medium-2 large-2 columns text-center">
 			
 			<a href=""><i class="general foundicon-idea"></i></a>
 			
 		</div>
 		
-		<div class="medium-4 large-4 columns e">
+		<div class="medium-4 large-4 columns">
 			
 			<p><span class="secondary-head">Mobile First</span><br>Build for small devices first, then add complexity for larger devices <a href="">&rarr;</a></p>
 			
 		</div>
 		
-		<div class="medium-2 large-2 columns text-center p">
+		<div class="medium-2 large-2 columns text-center">
 			
 			<a href=""><i class="general foundicon-inbox"></i></a>
 			
 		</div>
 		
-		<div class="medium-4 large-4 columns z">
+		<div class="medium-4 large-4 columns">
 			
 			<p><span class="secondary-head">Easy to Use</span><br>Just unpack the contents into your themes folder <a href="">&rarr;</a></p>
 			
