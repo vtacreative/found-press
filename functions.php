@@ -29,13 +29,7 @@ add_action('wp_enqueue_scripts', 'fp_scripts_styles', 5); //TODO: possibly alter
 
 
 
-/*	SET SOME CONSTANTS FOR HANDY REFERENCE */
-define('COMPANY_NAME', 						'Found-Press'						);
-define('STREET_ADDRESS',			'123 West Fourth St.'			);
-define('CITY',								'Some City'								);
-define('STATE',								'Some State'							);
-define('URL',				'http://www.yourcompany.com'				);
-define('FLAG_DIR',	get_template_directory_uri() . '/img/country-flags-64/'	);
+
 
 
 
@@ -90,35 +84,6 @@ if (file_exists(WP_PLUGIN_DIR . '/hello.php'))
 
 
 
-
-
-/* CUSTOMIZE LOGIN ELEMENTS */
-function fp_customize_login() { ?>
-    <style type="text/css">
-        .login #login h1 a {
-            background-image: url(<?php echo get_template_directory_uri(); ?>/img/fp-logo-medium.jpg);
-        }
-				body {
-					background:white;
-				}
-				form#loginform {
-					box-shadow:none;
-				}
-				p.fp-welcome {
-					font-weight:bold;
-				}
-				#login {
-					text-align:center;
-				}
-        .login #nav a, .login #backtoblog a {
-            color: #000000 !important;
-        }
-        .login #nav a:hover, .login #backtoblog a:hover {
-            color: red !important;
-        }
-    </style>
-<?php }
-add_action( 'login_enqueue_scripts', 'fp_customize_login' );
 
 
 
@@ -396,12 +361,3 @@ add_filter('nav_menu_css_class', 'clear_nav_menu_item_class', 10, 3);
 function clear_nav_menu_item_class($classes, $item, $args) {
     return array();
 }
-
-
-
-
-
-
-
-
-
