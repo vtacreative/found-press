@@ -1,12 +1,12 @@
 <?php
 /* FOOTER */
 ?>
-	<footer id="footer-container" class="n">
+	<footer id="footer-container">
 		
-		<div class="row full-width k">
+		<div class="row k">
 			
 			<!-- COL1 -->
-			<div class="medium-3 large-3 columns d">
+			<div class="medium-3 large-3 columns">
 				
 				<p>found-press is useful for the rapid deployment of responsive WordPress themes. <br><a href="">Learn More &rarr;</a></p>
 				
@@ -14,7 +14,7 @@
 			
 			
 			<!-- COL2 -->
-			<div class="medium-3 large-3 columns w">
+			<div class="medium-3 large-3 columns">
 				
 				<h4>Footer Menu</h4>
 				
@@ -24,7 +24,7 @@
 			
 			
 			<!-- COL3 -->
-			<div class="medium-3 large-3 columns k">
+			<div class="medium-3 large-3 columns">
 				
 				<h4>Fancy Badges Go Here.</h4>
 				
@@ -32,7 +32,7 @@
 			
 			
 			<!-- COL4 -->
-			<div class="medium-3 large-3 columns b">
+			<div class="medium-3 large-3 columns">
 				
 				<h4>"Let me tell you about how fantastically awesome this codebase is."</h4>
 				
@@ -48,15 +48,15 @@
 
 
 <!-- COPYRIGHT -->
-<div id="copyright" class="row l">
+<div id="copyright" class="row">
 	
-	<div class="medium-6 large-6 columns footer-left a">
+	<div class="medium-6 large-6 columns footer-left">
 		
-		<p><img src="<?php echo FLAG_DIR . 'Spain.png' ?>"><img src="http://localhost:8888/fp/wp-content/themes/found-press/img/fp-logo-small.jpg"/> By <a href="https://github.com/CL75">CL75</a>. A work in progress...</p>
+		<p>&copy;<?php echo date('Y') . ' ' . COMPANY_NAME; ?></p>
 		
 	</div>
 	
-	<div class="medium-6 large-6 columns footer-right c">
+	<div class="medium-6 large-6 columns footer-right">
 		
 		<p>
 		
@@ -76,16 +76,18 @@
 	
 </div> <!--/.row-->
 
-<?php echo '<script src="' . get_template_directory_uri() .'/js/vendor/jquery.js"></script>'; ?>
+<script src="<?php echo get_template_directory_uri(); ?>/js/vendor/fastclick.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/vendor/jquery.js"></script>
+
 
 <script>
 // 	SCROLL TO TOP
-$(function() {
-    $('a.scroll').bind('click',function(event){
-        var $anchor = $(this);
+jQuery(document).ready(function() {
+    jQuery('a.scroll').bind('click',function(event){
+        var $anchor = jQuery(this);
  
-        $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top
+        jQuery('html, body').stop().animate({
+            scrollTop: jQuery($anchor.attr('href')).offset().top
         }, 1000);
         /*
         if you don't want to use the easing effects:
@@ -105,20 +107,11 @@ window.addEventListener('load', function() {
 
 
 //	INITIALIZE FOUNDATION JS
-$(document).foundation();
+jQuery(document).ready(function($) {
+	$(document).foundation();
+});
 </script>
 
 <?php wp_footer(); ?>
-<script>
-//	INITIALIZE SLICK SLIDER
-$(document).ready(function(){
-	$('.single-item').slick({
-	  dots: true,
-		speed: 500,
-		arrows: true,
-		autoplay: true
-	});
-});
-</script>
 </body>
 </html>
