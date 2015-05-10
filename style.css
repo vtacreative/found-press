@@ -835,12 +835,8 @@ url(data:application/x-font-woff;charset=utf-8;base64,d09GRgABAAAAACmUAA0AAAAAQf
 
 /* /////////////////  GLOBAL STYLES */
 
-body {
-	background:white;
-}
-
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Verdana', sans-serif; 
+	font-family: sans-serif; 
 }
 	
 p, li {
@@ -848,13 +844,7 @@ p, li {
 	line-height:190%; 
 }
 	
-a {
-	color:#5da423; 
-}
-	
-a:hover {
-	color:#457a1a;
-}
+
 	
 
 	
@@ -883,7 +873,7 @@ a:hover {
 /* /////////////////  3-UP MARKETING */
 	
 section.three-up {
-	padding:75px 0; 
+	padding:65px 0; 
 }
 
 
@@ -904,17 +894,6 @@ section.secondary-marketing {
 div.section-header {
 	padding:75px 0 50px 0;
 	text-align:center;
-}
-	
-/* paragraph element for each cell */
-.secondary p {
-	color:#707070; 
-}
-
-/* cell header */	
-.secondary-head {
-	font-weight:bold;
-	color:#FFF; 
 }
 
 /* secondary marketing row */ 
@@ -984,15 +963,6 @@ div.section-header {
 
 /* ///////////////// HEADER AND NAVIGATION */
 
-h1.logo {
-	padding:4px 0;
-	margin:0; 
-}
-
-.nav {
-	padding:2% 0 0 0; 
-}
-	
 nav ul li {
 	display:inline-block;
 }
