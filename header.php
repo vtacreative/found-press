@@ -57,22 +57,8 @@
 			<div class="row">
 				
 	      <header class="large-4 columns" role="banner">
-		
-					<h1 class="logo">
 						
-						<a href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
-						
-					</h1>
-					
-					<?php if ( bloginfo( 'description' ) ) : ?>
-						
-					<h2>
-					
-						<?php bloginfo( 'description' ); ?>
-					
-					</h2>
-					
-					<?php endif; ?>
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/<?php echo COMPANY_SLUG; ?>-header-logo.png">
 					
 				</header>
 				

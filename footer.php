@@ -78,6 +78,7 @@
 
 <script src="<?php echo get_template_directory_uri(); ?>/js/vendor/fastclick.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/vendor/jquery.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/vendor/slick.min.js"></script>
 
 
 <script>
@@ -113,5 +114,16 @@ jQuery(document).ready(function($) {
 </script>
 
 <?php wp_footer(); ?>
+<script>
+//	INITIALIZE SLICK SLIDER
+$(document).ready(function(){
+	$('.autoplay').slick({
+	  slidesToShow: 3,
+	  slidesToScroll: 1,
+	  autoplay: true,
+	  autoplaySpeed: 2000
+	});
+});
+</script>
 </body>
 </html>
