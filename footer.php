@@ -6,7 +6,7 @@
 		<div class="row">
 			
 			<!-- COL1 -->
-			<div class="medium-3 large-3 columns">
+			<div id="footer-col-1" class="medium-3 large-3 columns">
 				
 				<p>found-press is useful for the rapid deployment of responsive WordPress themes. <br><a href="">Learn More &rarr;</a></p>
 				
@@ -14,7 +14,7 @@
 			
 			
 			<!-- COL2 -->
-			<div class="medium-3 large-3 columns">
+			<div id="footer-col-2" class="medium-3 large-3 columns">
 				
 				<h4>Footer Menu</h4>
 				
@@ -24,7 +24,7 @@
 			
 			
 			<!-- COL3 -->
-			<div class="medium-3 large-3 columns">
+			<div id="footer-col-3" class="medium-3 large-3 columns">
 				
 				<h4>Fancy Badges Go Here.</h4>
 				
@@ -32,9 +32,9 @@
 			
 			
 			<!-- COL4 -->
-			<div class="medium-3 large-3 columns">
+			<div id="footer-col-4" class="medium-3 large-3 columns">
 				
-				<h4>"Let me tell you about how fantastically awesome this codebase is."</h4>
+				<h4>"Let me tell you about how fantastically awesome <?php echo COMPANY_NAME; ?> is!"</h4>
 				
 				<p>&mdash;<i>Happy Customer</i></p>
 				
