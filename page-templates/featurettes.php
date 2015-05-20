@@ -215,5 +215,122 @@ get_header(); ?>
 <!-- END SECONDARY MARKETING -->
 
 
+
+
+
+
+
+<?php
+/* Template Name: Construction */
+get_header(); ?>
+
+<!-- FEATURETTES MARKETING -->
+<section id="featurettes">
+
+	<!-- ROW 1 -->
+	<div class="row featurettes">
+	
+		<div class="medium-5 large-5 columns">
+		
+			<a href=""><img src="http://lorempixel.com/320/320" alt=""></a>
+			
+		</div>
+		
+		<div class="medium-7 large-7 columns">
+		
+			<h2>Captivating Header #1</h2>
+			
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae lorem gravida, cursus massa eget, imperdiet velit. Donec placerat vestibulum viverra. Etiam at auctor enim. Aenean egestas turpis vitae risus rutrum accumsan. Fusce suscipit porttitor egestas. Fusce placerat ut elit aliquam congue. Suspendisse tristique tortor ac pulvinar pretium. Aliquam erat volutpat. Vestibulum vitae mattis nulla.  <br><a href="">call to action &rarr;</a></p>
+			
+		</div>
+		
+	</div>
+	
+	<!-- ROW 2 -->
+	<div class="row featurettes">
+	
+		<div class="medium-5 large-5 medium-push-7 large-push-7 columns">
+		
+			<a href=""><img src="http://lorempixel.com/320/320" alt=""></a>
+			
+		</div>
+		
+		<div class="medium-7 large-7 medium-pull-5 large-pull-5 columns">
+		
+			<h2>Captivating Header #2</h2>
+			
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae lorem gravida, cursus massa eget, imperdiet velit. Donec placerat vestibulum viverra. Etiam at auctor enim. Aenean egestas turpis vitae risus rutrum accumsan. Fusce suscipit porttitor egestas. Fusce placerat ut elit aliquam congue. Suspendisse tristique tortor ac pulvinar pretium. Aliquam erat volutpat. Vestibulum vitae mattis nulla.  <br><a href="">call to action &rarr;</a></p>
+			
+		</div>
+		
+	</div>
+	
+	<!-- ROW 3 -->
+	<div class="row featurettes">
+	
+		<div class="medium-5 large-5 columns">
+		
+			<a href=""><img src="http://lorempixel.com/320/320" alt=""></a>
+			
+		</div>
+		
+		<div class="medium-7 large-7 columns">
+		
+			<h2>Captivating Header #3</h2>
+			
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae lorem gravida, cursus massa eget, imperdiet velit. Donec placerat vestibulum viverra. Etiam at auctor enim. Aenean egestas turpis vitae risus rutrum accumsan. Fusce suscipit porttitor egestas. Fusce placerat ut elit aliquam congue. Suspendisse tristique tortor ac pulvinar pretium. Aliquam erat volutpat. Vestibulum vitae mattis nulla.  <br><a href="">call to action &rarr;</a></p>
+		</div>
+	</div>
+	
+	<!-- ROW 4 -->
+	<div class="row featurettes">
+	
+		<div class="medium-5 large-5 medium-push-7 large-push-7 columns">
+		
+			<a href=""><img src="http://lorempixel.com/320/320" alt=""></a>
+			
+		</div>
+		
+		<div class="medium-7 large-7 medium-pull-5 large-pull-5 columns">
+		
+			<h2>Captivating Header #4</h2>
+			
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae lorem gravida, cursus massa eget, imperdiet velit. Donec placerat vestibulum viverra. Etiam at auctor enim. Aenean egestas turpis vitae risus rutrum accumsan. Fusce suscipit porttitor egestas. Fusce placerat ut elit aliquam congue. Suspendisse tristique tortor ac pulvinar pretium. Aliquam erat volutpat. Vestibulum vitae mattis nulla.  <br><a href="">call to action &rarr;</a></p>
+			
+		</div>
+		
+	</div>
+	
+</section>
+
+
+
+<section id="client-logos">
+	
+	<div class="row">
+		
+		<div class="medium-12 columns text-center">
+			
+			<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/client-logos.png">
+		
+		</div>
+		
+	</div>
+	
+</section>
+
+
+				
+<?php get_footer(); ?>
+
+
+
+
+
+
+
+
+
+
 				
 <?php get_footer(); ?>
