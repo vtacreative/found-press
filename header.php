@@ -58,7 +58,7 @@
 				
 	      <header class="large-4 columns" role="banner">
 						
-					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/<?php echo COMPANY_SLUG; ?>-header-logo.png">
+					<a href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo bloginfo('description'); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/<?php echo COMPANY_SLUG; ?>-header-logo.png"></a>
 					
 				</header>
 				
