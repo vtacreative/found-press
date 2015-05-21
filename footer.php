@@ -50,13 +50,19 @@
 <!-- COPYRIGHT -->
 <div id="copyright" class="row">
 	
-	<div class="medium-6 large-6 columns footer-left">
+	<div class="medium-4 large-4 columns footer-left">
 		
 		<p>&copy;<?php echo date('Y') . ' ' . COMPANY_NAME; ?></p>
 		
 	</div>
 	
-	<div class="medium-6 large-6 columns footer-right">
+	<div class="medium-4 large-4 columns text-center">
+		
+		<small id="vcs-backlink">Site by <a href="//vtacreative.com">VCS</a></small>
+		
+	</div>
+	
+	<div class="medium-4 large-4 columns footer-right">
 		
 		<p>
 		
