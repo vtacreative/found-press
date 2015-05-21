@@ -12,13 +12,13 @@
 	
 	<title>Your Title Here</title>
 	
-	<meta name="description" content="Your company description">
+	<meta name="description" content="<?php echo COMPANY_NAME; ?>">
 	
 	<meta name="keywords" content="Your, Company, Keywords">
 	
 	<meta name="viewport" content="width=device-width">
 	
-	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="shortcut icon" href="/wp-content/themes/fp-child/img/favicon.ico">
 	
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	
