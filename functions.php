@@ -5,7 +5,7 @@
 function fp_scripts_styles () {
 	
 	/*	js  */
-	wp_register_script('foundation', get_template_directory_uri() . '/js/foundation.5.5.0.min.js', array(), null, true);
+	wp_register_script('foundation', get_template_directory_uri() . '/js/foundation/foundation.js', array(), null, true);
 	wp_enqueue_script('foundation');
 	
 	wp_register_script('modernizr', get_template_directory_uri() . '/js/vendor/modernizr.js', array(), null);
@@ -369,3 +369,4 @@ add_filter('nav_menu_css_class', 'clear_nav_menu_item_class', 10, 3);
 function clear_nav_menu_item_class($classes, $item, $args) {
     return array();
 }
+
