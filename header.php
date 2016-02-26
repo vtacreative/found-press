@@ -14,8 +14,6 @@
 	
 	<meta name="description" content="<?php echo COMPANY_NAME; ?>">
 	
-	<meta name="keywords" content="Your, Company, Keywords">
-	
 	<meta name="viewport" content="width=device-width">
 	
 	<link rel="shortcut icon" href="/wp-content/themes/fp-child/img/favicon.ico">
