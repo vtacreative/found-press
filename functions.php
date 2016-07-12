@@ -5,14 +5,11 @@
 function fp_scripts_styles () {
 	
 	/*	js  */
-	wp_register_script('foundation', get_template_directory_uri() . '/js/foundation/foundation.js', array(), null, true);
+	wp_register_script('foundation', get_template_directory_uri() . '/js/vendor/foundation.min.js', array(), null, true);
 	wp_enqueue_script('foundation');
 	
-	wp_register_script('modernizr', get_template_directory_uri() . '/js/vendor/modernizr.js', array(), null);
-	wp_enqueue_script('modernizr');
-	
 	/*	css	 */
-	wp_register_style('foundation', get_template_directory_uri() . '/css/foundation.5.5.0.min.css', array(), null, 'all');
+	wp_register_style('foundation', get_template_directory_uri() . '/css/foundation.min.css', array(), null, 'all');
 	wp_enqueue_style('foundation');
 
 	/* load our global stylesheet conditionally */
