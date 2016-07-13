@@ -82,7 +82,7 @@
 	
 </div> <!--/.row-->
 
-<script src="<?php echo get_template_directory_uri(); ?>/js/vendor/fastclick.js"></script>
+
 <script src="<?php echo get_template_directory_uri(); ?>/js/vendor/jquery.js"></script>
 
 
@@ -104,12 +104,6 @@ jQuery(document).ready(function() {
         event.preventDefault();
     });
 });
-
-
-//	INITIALIZE FASTCLICK
-window.addEventListener('load', function() {
-    new FastClick(document.body);
-}, false);
 
 
 //	INITIALIZE FOUNDATION JS
