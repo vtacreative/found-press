@@ -10,7 +10,7 @@
 	
 	<meta charset="utf-8">
 	
-	<title>Your Title Here</title>
+	<title><?php printf( get_bloginfo ( 'description' ) ); ?></title>
 	
 	<meta name="description" content="<?php echo COMPANY_NAME; ?>">
 	
