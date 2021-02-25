@@ -38,6 +38,14 @@ add_filter( 'script_loader_src', 'remove_query_strings', 10, 2 );
 
 
 
+/* ADD TITLE TAG SUPPORT */
+add_action( 'after_setup_theme', 'theme_slug_setup' );
+function theme_slug_setup() {
+	add_theme_support( 'title-tag' );
+}
+
+
+
 
 
 /* FUNCTION TO CREATE ROMAN NUMERALS FROM INTEGERS */

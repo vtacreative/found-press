@@ -10,7 +10,7 @@
 	
 	<meta charset="utf-8">
 	
-	<?php printf( get_bloginfo ( 'description' ) ); ?>
+	<?php wp_title( '|', true, 'right' ); ?>
 	
 	<meta name="description" content="<?php echo COMPANY_NAME; ?>">
 	
